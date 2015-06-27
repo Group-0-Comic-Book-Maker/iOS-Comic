@@ -39,9 +39,9 @@ class CameraViewController: UIViewController, UINavigationControllerDelegate, UI
         
         comicVC.myImage = chosenPhoto
         
-        self.navigationController?.pushViewController(comicVC, animated: true)
+//        self.navigationController?.pushViewController(comicVC, animated: true)
         
-//        presentViewController(picSelectorVC, animated: true, completion: nil)
+        presentViewController(comicVC, animated: true, completion: nil)
         
         
     }
