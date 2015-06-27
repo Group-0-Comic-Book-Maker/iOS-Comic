@@ -14,6 +14,8 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+    
     @IBOutlet weak var errorLabel: UILabel!
     
     var registrationInfo: [String:String] = [:]
@@ -25,6 +27,24 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         
         errorLabel.text = ""
         
+        NSNotificationCenter.defaultCenter().addObserverForName(UIKeyboardWillChangeFrameNotification, object: nil, queue: NSOperationQueue.mainQueue()) { (notification) -> Void in
+            
+            self.view.setNeedsUpdateConstraints()
+            self.view.setNeedsLayout()
+            
+            if let kbSize = notification.userInfo?[UIKeyboardFrameEndUserInfoKey]?.CGRectValue().size{
+                
+                self.bottomConstraint.constant = 20 + kbSize.height
+                
+            }
+            
+        }
+        
+        NSNotificationCenter.defaultCenter().addObserverForName(UIKeyboardDidHideNotification, object: nil, queue: NSOperationQueue.mainQueue()) { (notification) -> Void in
+            
+            self.bottomConstraint.constant = 20
+            
+        }
         
         // Do any additional setup after loading the view.
     }

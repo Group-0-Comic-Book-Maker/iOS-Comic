@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9D5A64E6-57A6-41E2-BA08-A22744201F1B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Kerclack</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6506883509B0A0814DB35C7D9B7D1A97781EF756</key>
+		<string>https://github.com/Group-0-Comic-Book-Maker/iOS-Comic.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Kerclack.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6506883509B0A0814DB35C7D9B7D1A97781EF756</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Group-0-Comic-Book-Maker/iOS-Comic.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6506883509B0A0814DB35C7D9B7D1A97781EF756</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6506883509B0A0814DB35C7D9B7D1A97781EF756</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-Comic</string>
+		</dict>
+	</array>
+</dict>
+</plist>

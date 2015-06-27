@@ -1,0 +1,1287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D496439CB1FE1F96003016 /* AmazonS3RequestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FFB574CE2B3F7CBD3FE56B4 /* AmazonS3RequestManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		020F922029FBAFF8DDC1DA26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0DB989D296452E3A4C365E1 /* Foundation.framework */; };
+		0312FE099ADC485D0F9ACE34 /* Pods-Kerclack-AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F51E9CC2C2AC924C24DF4A9B /* Pods-Kerclack-AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04C0ACBCA8820622DB8B1B16 /* AmazonS3SignatureHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D142601091274A97CCFDB6 /* AmazonS3SignatureHelpers.m */; };
+		07B2CF94A61F8BD8348DAA68 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C7098E12456CF26936EFCC /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0877EA421FAF7FF9F2634A77 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 79443EA7355CFAABA9D9AAF6 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B311504C5D3FCEF31BC0118 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5B9758B00380A5E1093E42 /* AFHTTPRequestOperation.m */; };
+		0DA79B944E6AB5FD6440C685 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF02C2D0CC47B144FCE6B9 /* Alamofire.swift */; };
+		184FF956224C101022F1B1B4 /* AmazonS3RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D74FC4A2B80B6703F0C238 /* AmazonS3RequestManager.swift */; };
+		245F45010264CAF986125C96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0DB989D296452E3A4C365E1 /* Foundation.framework */; };
+		26341782A901D6B28367CEC6 /* AFAmazonS3RequestSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 527945F9EAA813A60F598837 /* AFAmazonS3RequestSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29F7465C4AF424284BFEAB8A /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B7CE2D25F1E2BB8A4A63124 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DF2D71FA46FF27F36515538 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CA74476ED0137E74C3F3C /* AFURLRequestSerialization.m */; };
+		2ED1643C13044DFC23AE5007 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59F6547629DCCDC8D56C05B /* Validation.swift */; };
+		32EC6A733227150C75EFBC2A /* Pods-Kerclack-AmazonS3RequestManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF02AC32B5F1A145BCFEDDC /* Pods-Kerclack-AmazonS3RequestManager-dummy.m */; };
+		33D47B963B97CA9E51014811 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E4E9B7B51B33B481C32246 /* AFSecurityPolicy.m */; };
+		36EF88A973E9B66D207F1FD6 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A2615404FACD8A9A57CD0638 /* UIProgressView+AFNetworking.m */; };
+		37F481C182BCAF670D0F01CA /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9312504CB4A2A1DBC3AE6E1 /* Request.swift */; };
+		38120B62DA55B36A5C56BC8A /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 096F75B198D22BC48C03927C /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DDDE6DE326359CBD7F82A8B /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C57C811017243E6D180B549 /* ResponseSerialization.swift */; };
+		41CC30098E62595A6A55CA7A /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C89B14ED6CDD731E2DF8F /* AFURLSessionManager.m */; };
+		461E04D3E6C5817F7F9E0850 /* AFAmazonS3Manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4610C8E2D75CF049941A6E32 /* AFAmazonS3Manager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CD45010B399E33E7A9F918F /* Pods-Kerclack-AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D3710E79CBC1345182AA05 /* Pods-Kerclack-AFNetworking-dummy.m */; };
+		564AA0F1981D51F9E6C472E0 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5939692D0B57ADE6B76A0F44 /* AFHTTPRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A2437CB1F388BA2B544E158 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF9530DF1F17B225B1AB390 /* UIActivityIndicatorView+AFNetworking.m */; };
+		5D7EF6CE29BDF4C72D8693D0 /* Pods-Kerclack-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C335694D24D2FF8EDE819DD4 /* Pods-Kerclack-Alamofire-dummy.m */; };
+		60A4C5093C1BAE78B0A12213 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F487495B9B93E40AFF9C997 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CBBC3476ADB4B3FAE5A6813 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D0A75E1DE73E55BA8164F /* Upload.swift */; };
+		6F531E8FAD30F433F22295C2 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 40903999818AE067C577E936 /* AFHTTPSessionManager.m */; };
+		709E1F0214ED74375A855655 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF3C09C5E1B62078917D6DA /* AFNetworkReachabilityManager.m */; };
+		756A5C0F7ECB9C57BB5B22D7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52056244ABE83CB1F840CCB2 /* MobileCoreServices.framework */; };
+		7627F3B0EF77F122D5F2DDD7 /* AFAmazonS3RequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FCD68C0DF9270F20230307A /* AFAmazonS3RequestSerializer.m */; };
+		7696145299561897D4AAE027 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7C7BAEEB1B6D479FC0B8A /* UIWebView+AFNetworking.m */; };
+		776515045579EF8798513C51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0DB989D296452E3A4C365E1 /* Foundation.framework */; };
+		79198E8E3E6C876C6E40E951 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4084B99F8E639EC7D6A0EE82 /* AFNetworkActivityIndicatorManager.m */; };
+		7B0B9D3578672A7112211F30 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15E835E0E8FF5A833C9BB84A /* SystemConfiguration.framework */; };
+		7D5CDC273A62094B5E847E14 /* Pods-Kerclack-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CE302280F284676EA505611 /* Pods-Kerclack-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D65CD3FD390AF7BA30F9446 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA29D534E8EA025CF28054C /* Download.swift */; };
+		83960890C97BF50ACA518005 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6520A0FB792148FC0903A4AD /* ParameterEncoding.swift */; };
+		8B2618230D97C9101C1C774B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0DB989D296452E3A4C365E1 /* Foundation.framework */; };
+		8EEAAE54459B076336065AA9 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CDF1200496566E8B269ACCA /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97FE5DBDA553BB0B23985463 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B82732BC6EE20B5F777719FD /* AFHTTPRequestOperationManager.m */; };
+		98EFBD8A2BA849A7075C7361 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB889C7B574C507AFC932700 /* CoreGraphics.framework */; };
+		A14B7BE496D52F6600C83B3C /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 7650F5874471DC7779FF768D /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A45EDA3B5AA9DE3E68EDD60B /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 388C87CED54F6411EE682760 /* UIAlertView+AFNetworking.m */; };
+		A77078941949A76EB5571F92 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E5D0FCFAB275AA1524F47E2D /* AFURLConnectionOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8F5330D063840145809F1F7 /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CAFABF540A01DBEBA92526D /* UIAlertView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC461AB51567BE894B7F3A94 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 64927514B8C5F2137090CFA1 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACB7B22C7DB24245AE5DC497 /* Pods-Kerclack-AFAmazonS3Manager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9980E5FCC19CBDFAF7BFD06 /* Pods-Kerclack-AFAmazonS3Manager-dummy.m */; };
+		B1CB52A9833470132453DB4D /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD2F00EE77A9B1E2409508D /* AFURLResponseSerialization.m */; };
+		B7663E7286501EEA49851888 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C0190136CC68A8454EE55AED /* UIButton+AFNetworking.m */; };
+		B9B79AC6A0B1065389EE43B3 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A52B7764CB9F12062FF4C7 /* Manager.swift */; };
+		B9C93BC092B65E2DFBADA172 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDBD7BEF321FDB1BB0F8347E /* Security.framework */; };
+		BB28984441F108D2817B7796 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 85C72EB2CC21A50E3B24425F /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF808EB9377F9EFA11C5FB88 /* Pods-Kerclack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB109D37B4F255B6356395B /* Pods-Kerclack-dummy.m */; };
+		C11B3B7F95E5222ACF1B480E /* AmazonS3ACL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C41C3E92206046A704FF8F /* AmazonS3ACL.swift */; };
+		C4807278D6E39C0F14625EB1 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 963B9B3C96CD939BF629B33C /* UIRefreshControl+AFNetworking.m */; };
+		C6AF7EC02E2058DF6B5A36E8 /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C4826BF3A08010997AB854D5 /* AFHTTPRequestOperationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA0C95F18230BA4ECB63D575 /* Pods-Kerclack-AFAmazonS3Manager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2C46022733A401E51C02A2B /* Pods-Kerclack-AFAmazonS3Manager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDC9D01BBC0EDF13506A6B2C /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F030A741B683CCA208A442 /* AFNetworking.framework */; };
+		D3A23CEDC78FFDD597532884 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A96C27A2F2CAABEF020FFEE /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D49F47BDDF244664C14E1115 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A590B1AF99391A0F73611E82 /* UIImageView+AFNetworking.m */; };
+		D646B7960C55568002622A86 /* Pods-Kerclack-AmazonS3RequestManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69D981C530ABCC0D0FDB51C3 /* Pods-Kerclack-AmazonS3RequestManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9BD44C119E6EB5A118BBDBB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52056244ABE83CB1F840CCB2 /* MobileCoreServices.framework */; };
+		DAFF760B613337D126768129 /* AFAmazonS3Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = D43157BBC8D320C4AE87BE9A /* AFAmazonS3Manager.m */; };
+		DDA5808E8E72516EDD04378C /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D4B2FD2EA8DE689EC20DD47E /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF08259287E7B5D3725DBF6F /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BED08BAA9C58D093AED4043C /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2A8D68CE3AE2D7FEC37A82D /* AFAmazonS3ResponseSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CA449B78CBB6E2EECD358E6 /* AFAmazonS3ResponseSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E474F09F2EF9327DB74BB528 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2717EE11E83E10C8C795B8 /* AFURLConnectionOperation.m */; };
+		E4F41952FF309DE61B040220 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = CED17B673FE0764718051565 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E95B28BFD4311A79CF55656E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0DB989D296452E3A4C365E1 /* Foundation.framework */; };
+		EE3DC9C9521E99B45D1CF548 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A870526A97D9F51DA1F1EDE /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE674F3C25AE311AB50100FC /* AmazonS3SignatureHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D5D3D37813141C39C59971D /* AmazonS3SignatureHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1652A25BA210C1AE2189798 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 41014CB5F271B8DCE546F47E /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3F84D12DE68EEB852509ABE /* AFAmazonS3ResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = EA17306027C80A626E0B8945 /* AFAmazonS3ResponseSerializer.m */; };
+		F96C7EB64DAECAC0191E423E /* Pods-Kerclack-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E208FEE2F004C3FA9391CF4 /* Pods-Kerclack-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF453849A832EC3248A033A2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E4D3F29893BB572EB5AC15 /* Alamofire.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		568A56E7F7F29ED4FC0A2931 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A1683C5574BC00544F5E97C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D9F90DDD0D03B333B0D3803;
+			remoteInfo = "Pods-Kerclack-Alamofire";
+		};
+		A081CF4EE2B27329E323DB67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A1683C5574BC00544F5E97C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 881947E15119232C7414454D;
+			remoteInfo = "Pods-Kerclack-AFNetworking";
+		};
+		B0C749319643E1B2B710857D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A1683C5574BC00544F5E97C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 994013DEE18D337F74057A9B;
+			remoteInfo = "Pods-Kerclack-AFAmazonS3Manager";
+		};
+		C65F48A560AC7FE3774758B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A1683C5574BC00544F5E97C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61D8481913A1BBEF3C34F5E3;
+			remoteInfo = "Pods-Kerclack-AmazonS3RequestManager";
+		};
+		D5553B58F19822CDD655737F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A1683C5574BC00544F5E97C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D9F90DDD0D03B333B0D3803;
+			remoteInfo = "Pods-Kerclack-Alamofire";
+		};
+		D9B48D807062A425B8704677 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A1683C5574BC00544F5E97C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 881947E15119232C7414454D;
+			remoteInfo = "Pods-Kerclack-AFNetworking";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0447FAED40936CF103CCACEE /* AFAmazonS3Manager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFAmazonS3Manager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		051530687B5C69C9DA6A92A2 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		096F75B198D22BC48C03927C /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		0AC8F95BDB9A30E1723F6B63 /* Pods-Kerclack-AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kerclack-AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
+		0CD2F00EE77A9B1E2409508D /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		0EBCF31B7AA04F12D3FC9AAA /* Pods-Kerclack-AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kerclack-AFNetworking.xcconfig"; sourceTree = "<group>"; };
+		0F8C89B14ED6CDD731E2DF8F /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		0FB109D37B4F255B6356395B /* Pods-Kerclack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Kerclack-dummy.m"; sourceTree = "<group>"; };
+		0FCD68C0DF9270F20230307A /* AFAmazonS3RequestSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAmazonS3RequestSerializer.m; path = AFAmazonS3Manager/AFAmazonS3RequestSerializer.m; sourceTree = "<group>"; };
+		127CCA79C1FF42D273ECCAB3 /* Pods-Kerclack-Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kerclack-Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
+		12D04C7A6008BA8AF4E3A08C /* Pods-Kerclack-AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kerclack-AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		14E0F6B5456542BD1419A196 /* Pods-Kerclack-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Kerclack-frameworks.sh"; sourceTree = "<group>"; };
+		15E835E0E8FF5A833C9BB84A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		1A7011D8750B614477F61862 /* Pods-Kerclack-AmazonS3RequestManager-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kerclack-AmazonS3RequestManager-Private.xcconfig"; sourceTree = "<group>"; };
+		1AF9530DF1F17B225B1AB390 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		1E208FEE2F004C3FA9391CF4 /* Pods-Kerclack-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kerclack-umbrella.h"; sourceTree = "<group>"; };
+		207D0A75E1DE73E55BA8164F /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		2C57C811017243E6D180B549 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		2CE302280F284676EA505611 /* Pods-Kerclack-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kerclack-Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		316E3705FC2788E7FD89752C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		384222B90E75B8EFE60DBF8D /* Pods-Kerclack-AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Kerclack-AFNetworking.modulemap"; sourceTree = "<group>"; };
+		388C87CED54F6411EE682760 /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AFNetworking.m"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		3B7CE2D25F1E2BB8A4A63124 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		3CDF1200496566E8B269ACCA /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		4084B99F8E639EC7D6A0EE82 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		40903999818AE067C577E936 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		41014CB5F271B8DCE546F47E /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		4610C8E2D75CF049941A6E32 /* AFAmazonS3Manager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAmazonS3Manager.h; path = AFAmazonS3Manager/AFAmazonS3Manager.h; sourceTree = "<group>"; };
+		46D142601091274A97CCFDB6 /* AmazonS3SignatureHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AmazonS3SignatureHelpers.m; path = AmazonS3RequestManager/AmazonS3SignatureHelpers.m; sourceTree = "<group>"; };
+		4A2717EE11E83E10C8C795B8 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		4A9ABE3FB77AF88F95A23EBB /* Pods-Kerclack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kerclack.release.xcconfig"; sourceTree = "<group>"; };
+		4B5B9758B00380A5E1093E42 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		4D5D3D37813141C39C59971D /* AmazonS3SignatureHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AmazonS3SignatureHelpers.h; path = AmazonS3RequestManager/AmazonS3SignatureHelpers.h; sourceTree = "<group>"; };
+		4FB3B6379463B68B57FA434B /* Pods-Kerclack-AFAmazonS3Manager-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kerclack-AFAmazonS3Manager-Private.xcconfig"; sourceTree = "<group>"; };
+		50A4518898D5DBEF4D2F8D70 /* Pods-Kerclack-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kerclack-Alamofire.xcconfig"; sourceTree = "<group>"; };
+		512DBD862D7CA0FEE223CDD6 /* Pods-Kerclack-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Kerclack-acknowledgements.markdown"; sourceTree = "<group>"; };
+		52056244ABE83CB1F840CCB2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		527945F9EAA813A60F598837 /* AFAmazonS3RequestSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAmazonS3RequestSerializer.h; path = AFAmazonS3Manager/AFAmazonS3RequestSerializer.h; sourceTree = "<group>"; };
+		5939692D0B57ADE6B76A0F44 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		61D3710E79CBC1345182AA05 /* Pods-Kerclack-AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Kerclack-AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		64927514B8C5F2137090CFA1 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		6520A0FB792148FC0903A4AD /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		68FF092B48DD8C8054FD9198 /* Pods-Kerclack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Kerclack.modulemap"; sourceTree = "<group>"; };
+		69D981C530ABCC0D0FDB51C3 /* Pods-Kerclack-AmazonS3RequestManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kerclack-AmazonS3RequestManager-umbrella.h"; sourceTree = "<group>"; };
+		6A96C27A2F2CAABEF020FFEE /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		6AF3C09C5E1B62078917D6DA /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		6DA29D534E8EA025CF28054C /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		71A52B7764CB9F12062FF4C7 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		71C41C3E92206046A704FF8F /* AmazonS3ACL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AmazonS3ACL.swift; path = AmazonS3RequestManager/AmazonS3ACL.swift; sourceTree = "<group>"; };
+		7650F5874471DC7779FF768D /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		7766869C2BD7B70BEB630009 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79443EA7355CFAABA9D9AAF6 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		7CAFABF540A01DBEBA92526D /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+AFNetworking.h"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		7EDCC3F7F4E3940810955DCA /* Pods-Kerclack-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kerclack-Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		7F487495B9B93E40AFF9C997 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		84B56C8ACDE804C112CC680C /* Pods-Kerclack-AFAmazonS3Manager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kerclack-AFAmazonS3Manager-prefix.pch"; sourceTree = "<group>"; };
+		85C72EB2CC21A50E3B24425F /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		8AEB98EB343ECF7149A24244 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CA449B78CBB6E2EECD358E6 /* AFAmazonS3ResponseSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAmazonS3ResponseSerializer.h; path = AFAmazonS3Manager/AFAmazonS3ResponseSerializer.h; sourceTree = "<group>"; };
+		8FFB574CE2B3F7CBD3FE56B4 /* AmazonS3RequestManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AmazonS3RequestManager.h; path = AmazonS3RequestManager/AmazonS3RequestManager.h; sourceTree = "<group>"; };
+		963B9B3C96CD939BF629B33C /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		9A870526A97D9F51DA1F1EDE /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		9BF8BCA94C26B97DE6F6E7A4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E2720018E043875FE25EDA4 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2615404FACD8A9A57CD0638 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		A2C46022733A401E51C02A2B /* Pods-Kerclack-AFAmazonS3Manager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kerclack-AFAmazonS3Manager-umbrella.h"; sourceTree = "<group>"; };
+		A590B1AF99391A0F73611E82 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		A7964E4A4B3DFAF1BF2943C2 /* Pods-Kerclack-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Kerclack-acknowledgements.plist"; sourceTree = "<group>"; };
+		ACBF02C2D0CC47B144FCE6B9 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		B82732BC6EE20B5F777719FD /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		B894873078C9F879A80C611A /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; };
+		B9980E5FCC19CBDFAF7BFD06 /* Pods-Kerclack-AFAmazonS3Manager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Kerclack-AFAmazonS3Manager-dummy.m"; sourceTree = "<group>"; };
+		BAC7C7BAEEB1B6D479FC0B8A /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		BC8DB4B11A73D37EBACBBFDB /* Pods-Kerclack-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kerclack-environment.h"; sourceTree = "<group>"; };
+		BDBD7BEF321FDB1BB0F8347E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		BED08BAA9C58D093AED4043C /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		C0190136CC68A8454EE55AED /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		C0DB989D296452E3A4C365E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C1E4E9B7B51B33B481C32246 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		C335694D24D2FF8EDE819DD4 /* Pods-Kerclack-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Kerclack-Alamofire-dummy.m"; sourceTree = "<group>"; };
+		C3547A765D3409982538D722 /* Pods-Kerclack-AmazonS3RequestManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kerclack-AmazonS3RequestManager-prefix.pch"; sourceTree = "<group>"; };
+		C4826BF3A08010997AB854D5 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		C59F6547629DCCDC8D56C05B /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		CA3786EA3EAB79DC2ECB4300 /* Pods-Kerclack-AmazonS3RequestManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Kerclack-AmazonS3RequestManager.modulemap"; sourceTree = "<group>"; };
+		CD3498181E71A78691722025 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED17B673FE0764718051565 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		D43157BBC8D320C4AE87BE9A /* AFAmazonS3Manager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAmazonS3Manager.m; path = AFAmazonS3Manager/AFAmazonS3Manager.m; sourceTree = "<group>"; };
+		D4B2FD2EA8DE689EC20DD47E /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		D8C7098E12456CF26936EFCC /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		D9312504CB4A2A1DBC3AE6E1 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		D9F030A741B683CCA208A442 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9A0FAEA51B58ADEF0ED559 /* Pods_Kerclack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kerclack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC3B4D4D668B96595E968F8 /* Pods-Kerclack-AmazonS3RequestManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kerclack-AmazonS3RequestManager.xcconfig"; sourceTree = "<group>"; };
+		DFF02AC32B5F1A145BCFEDDC /* Pods-Kerclack-AmazonS3RequestManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Kerclack-AmazonS3RequestManager-dummy.m"; sourceTree = "<group>"; };
+		E043124C4EB6FA462D9B9A57 /* Pods-Kerclack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kerclack.debug.xcconfig"; sourceTree = "<group>"; };
+		E3D74FC4A2B80B6703F0C238 /* AmazonS3RequestManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AmazonS3RequestManager.swift; path = AmazonS3RequestManager/AmazonS3RequestManager.swift; sourceTree = "<group>"; };
+		E5D0FCFAB275AA1524F47E2D /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		E6E4D3F29893BB572EB5AC15 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B5EDB67B561233DC2DEACF /* Pods-Kerclack-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Kerclack-resources.sh"; sourceTree = "<group>"; };
+		E84CA74476ED0137E74C3F3C /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		EA17306027C80A626E0B8945 /* AFAmazonS3ResponseSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAmazonS3ResponseSerializer.m; path = AFAmazonS3Manager/AFAmazonS3ResponseSerializer.m; sourceTree = "<group>"; };
+		EB889C7B574C507AFC932700 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		F12E9E959782D5F81A361240 /* AmazonS3RequestManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AmazonS3RequestManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1BAC0020350C097562FCAAC /* Pods-Kerclack-AFAmazonS3Manager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Kerclack-AFAmazonS3Manager.modulemap"; sourceTree = "<group>"; };
+		F51E9CC2C2AC924C24DF4A9B /* Pods-Kerclack-AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kerclack-AFNetworking-umbrella.h"; sourceTree = "<group>"; };
+		FBC313955BF31AB97576F5F3 /* Pods-Kerclack-AFAmazonS3Manager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kerclack-AFAmazonS3Manager.xcconfig"; sourceTree = "<group>"; };
+		FECC5F88537F06850C9EA429 /* Pods-Kerclack-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Kerclack-Alamofire.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1084D3FE3AA0E2A7B98365E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				245F45010264CAF986125C96 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D0B34758B985DBE29B04FA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98EFBD8A2BA849A7075C7361 /* CoreGraphics.framework in Frameworks */,
+				020F922029FBAFF8DDC1DA26 /* Foundation.framework in Frameworks */,
+				756A5C0F7ECB9C57BB5B22D7 /* MobileCoreServices.framework in Frameworks */,
+				B9C93BC092B65E2DFBADA172 /* Security.framework in Frameworks */,
+				7B0B9D3578672A7112211F30 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		657C8A791B993A29AF4E4EAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF453849A832EC3248A033A2 /* Alamofire.framework in Frameworks */,
+				E95B28BFD4311A79CF55656E /* Foundation.framework in Frameworks */,
+				D9BD44C119E6EB5A118BBDBB /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D35AEBFE02DAC28DBD5D50A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDC9D01BBC0EDF13506A6B2C /* AFNetworking.framework in Frameworks */,
+				776515045579EF8798513C51 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8144F0348CDDBFEB4787E9A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B2618230D97C9101C1C774B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		045E007820C666ADDAB473AA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8AEB98EB343ECF7149A24244 /* Info.plist */,
+				F1BAC0020350C097562FCAAC /* Pods-Kerclack-AFAmazonS3Manager.modulemap */,
+				FBC313955BF31AB97576F5F3 /* Pods-Kerclack-AFAmazonS3Manager.xcconfig */,
+				4FB3B6379463B68B57FA434B /* Pods-Kerclack-AFAmazonS3Manager-Private.xcconfig */,
+				B9980E5FCC19CBDFAF7BFD06 /* Pods-Kerclack-AFAmazonS3Manager-dummy.m */,
+				84B56C8ACDE804C112CC680C /* Pods-Kerclack-AFAmazonS3Manager-prefix.pch */,
+				A2C46022733A401E51C02A2B /* Pods-Kerclack-AFAmazonS3Manager-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Kerclack-AFAmazonS3Manager";
+			sourceTree = "<group>";
+		};
+		0BA01A42B1418A3E153A2072 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				41014CB5F271B8DCE546F47E /* AFNetworking.h */,
+				41D9AE516EC872416FA550D8 /* NSURLConnection */,
+				D89007A65BF4574F066AC0EB /* NSURLSession */,
+				5F0EB483C2800C4B8FCFBDE2 /* Reachability */,
+				D028DF4C255C873AE1D4F37C /* Security */,
+				CACCD50B4ABDD5C630E7D0F6 /* Serialization */,
+				A79A8A03324F6B043BB5E819 /* Support Files */,
+				AABC7B6EE51AEFBF9B95CE4A /* UIKit */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		1062CFF849DF695C10EE0BD4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD3498181E71A78691722025 /* Info.plist */,
+				FECC5F88537F06850C9EA429 /* Pods-Kerclack-Alamofire.modulemap */,
+				50A4518898D5DBEF4D2F8D70 /* Pods-Kerclack-Alamofire.xcconfig */,
+				127CCA79C1FF42D273ECCAB3 /* Pods-Kerclack-Alamofire-Private.xcconfig */,
+				C335694D24D2FF8EDE819DD4 /* Pods-Kerclack-Alamofire-dummy.m */,
+				7EDCC3F7F4E3940810955DCA /* Pods-Kerclack-Alamofire-prefix.pch */,
+				2CE302280F284676EA505611 /* Pods-Kerclack-Alamofire-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Kerclack-Alamofire";
+			sourceTree = "<group>";
+		};
+		306F4BD1188C5A838AF029B4 /* Pods-Kerclack */ = {
+			isa = PBXGroup;
+			children = (
+				7766869C2BD7B70BEB630009 /* Info.plist */,
+				68FF092B48DD8C8054FD9198 /* Pods-Kerclack.modulemap */,
+				512DBD862D7CA0FEE223CDD6 /* Pods-Kerclack-acknowledgements.markdown */,
+				A7964E4A4B3DFAF1BF2943C2 /* Pods-Kerclack-acknowledgements.plist */,
+				0FB109D37B4F255B6356395B /* Pods-Kerclack-dummy.m */,
+				BC8DB4B11A73D37EBACBBFDB /* Pods-Kerclack-environment.h */,
+				14E0F6B5456542BD1419A196 /* Pods-Kerclack-frameworks.sh */,
+				E7B5EDB67B561233DC2DEACF /* Pods-Kerclack-resources.sh */,
+				1E208FEE2F004C3FA9391CF4 /* Pods-Kerclack-umbrella.h */,
+				E043124C4EB6FA462D9B9A57 /* Pods-Kerclack.debug.xcconfig */,
+				4A9ABE3FB77AF88F95A23EBB /* Pods-Kerclack.release.xcconfig */,
+			);
+			name = "Pods-Kerclack";
+			path = "Target Support Files/Pods-Kerclack";
+			sourceTree = "<group>";
+		};
+		34B3FC0B0C13D9785B1E37F2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BF8BCA94C26B97DE6F6E7A4 /* Info.plist */,
+				CA3786EA3EAB79DC2ECB4300 /* Pods-Kerclack-AmazonS3RequestManager.modulemap */,
+				DCC3B4D4D668B96595E968F8 /* Pods-Kerclack-AmazonS3RequestManager.xcconfig */,
+				1A7011D8750B614477F61862 /* Pods-Kerclack-AmazonS3RequestManager-Private.xcconfig */,
+				DFF02AC32B5F1A145BCFEDDC /* Pods-Kerclack-AmazonS3RequestManager-dummy.m */,
+				C3547A765D3409982538D722 /* Pods-Kerclack-AmazonS3RequestManager-prefix.pch */,
+				69D981C530ABCC0D0FDB51C3 /* Pods-Kerclack-AmazonS3RequestManager-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Kerclack-AmazonS3RequestManager";
+			sourceTree = "<group>";
+		};
+		41D9AE516EC872416FA550D8 /* NSURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				5939692D0B57ADE6B76A0F44 /* AFHTTPRequestOperation.h */,
+				4B5B9758B00380A5E1093E42 /* AFHTTPRequestOperation.m */,
+				C4826BF3A08010997AB854D5 /* AFHTTPRequestOperationManager.h */,
+				B82732BC6EE20B5F777719FD /* AFHTTPRequestOperationManager.m */,
+				E5D0FCFAB275AA1524F47E2D /* AFURLConnectionOperation.h */,
+				4A2717EE11E83E10C8C795B8 /* AFURLConnectionOperation.m */,
+			);
+			name = NSURLConnection;
+			sourceTree = "<group>";
+		};
+		509E29A4F3CEFD6F7D78C1F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED84E715A58CD6E70C7DE0EC /* AFAmazonS3Manager */,
+				0BA01A42B1418A3E153A2072 /* AFNetworking */,
+				ECE465D9AE54AC42669E3247 /* Alamofire */,
+				C8478E6D9CA8B0864D78BCB4 /* AmazonS3RequestManager */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5F0EB483C2800C4B8FCFBDE2 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				85C72EB2CC21A50E3B24425F /* AFNetworkReachabilityManager.h */,
+				6AF3C09C5E1B62078917D6DA /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		9D98572E93289E3348F76380 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EB889C7B574C507AFC932700 /* CoreGraphics.framework */,
+				C0DB989D296452E3A4C365E1 /* Foundation.framework */,
+				52056244ABE83CB1F840CCB2 /* MobileCoreServices.framework */,
+				BDBD7BEF321FDB1BB0F8347E /* Security.framework */,
+				15E835E0E8FF5A833C9BB84A /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A79A8A03324F6B043BB5E819 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				316E3705FC2788E7FD89752C /* Info.plist */,
+				384222B90E75B8EFE60DBF8D /* Pods-Kerclack-AFNetworking.modulemap */,
+				0EBCF31B7AA04F12D3FC9AAA /* Pods-Kerclack-AFNetworking.xcconfig */,
+				0AC8F95BDB9A30E1723F6B63 /* Pods-Kerclack-AFNetworking-Private.xcconfig */,
+				61D3710E79CBC1345182AA05 /* Pods-Kerclack-AFNetworking-dummy.m */,
+				12D04C7A6008BA8AF4E3A08C /* Pods-Kerclack-AFNetworking-prefix.pch */,
+				F51E9CC2C2AC924C24DF4A9B /* Pods-Kerclack-AFNetworking-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Kerclack-AFNetworking";
+			sourceTree = "<group>";
+		};
+		AABC7B6EE51AEFBF9B95CE4A /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				64927514B8C5F2137090CFA1 /* AFNetworkActivityIndicatorManager.h */,
+				4084B99F8E639EC7D6A0EE82 /* AFNetworkActivityIndicatorManager.m */,
+				7650F5874471DC7779FF768D /* UIActivityIndicatorView+AFNetworking.h */,
+				1AF9530DF1F17B225B1AB390 /* UIActivityIndicatorView+AFNetworking.m */,
+				7CAFABF540A01DBEBA92526D /* UIAlertView+AFNetworking.h */,
+				388C87CED54F6411EE682760 /* UIAlertView+AFNetworking.m */,
+				CED17B673FE0764718051565 /* UIButton+AFNetworking.h */,
+				C0190136CC68A8454EE55AED /* UIButton+AFNetworking.m */,
+				3CDF1200496566E8B269ACCA /* UIImageView+AFNetworking.h */,
+				A590B1AF99391A0F73611E82 /* UIImageView+AFNetworking.m */,
+				9A870526A97D9F51DA1F1EDE /* UIKit+AFNetworking.h */,
+				BED08BAA9C58D093AED4043C /* UIProgressView+AFNetworking.h */,
+				A2615404FACD8A9A57CD0638 /* UIProgressView+AFNetworking.m */,
+				D4B2FD2EA8DE689EC20DD47E /* UIRefreshControl+AFNetworking.h */,
+				963B9B3C96CD939BF629B33C /* UIRefreshControl+AFNetworking.m */,
+				096F75B198D22BC48C03927C /* UIWebView+AFNetworking.h */,
+				BAC7C7BAEEB1B6D479FC0B8A /* UIWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		C8478E6D9CA8B0864D78BCB4 /* AmazonS3RequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				71C41C3E92206046A704FF8F /* AmazonS3ACL.swift */,
+				8FFB574CE2B3F7CBD3FE56B4 /* AmazonS3RequestManager.h */,
+				E3D74FC4A2B80B6703F0C238 /* AmazonS3RequestManager.swift */,
+				4D5D3D37813141C39C59971D /* AmazonS3SignatureHelpers.h */,
+				46D142601091274A97CCFDB6 /* AmazonS3SignatureHelpers.m */,
+				34B3FC0B0C13D9785B1E37F2 /* Support Files */,
+			);
+			path = AmazonS3RequestManager;
+			sourceTree = "<group>";
+		};
+		C96D7EB45B3D805604510D9B = {
+			isa = PBXGroup;
+			children = (
+				B894873078C9F879A80C611A /* Podfile */,
+				CEE1E4FEF2949B2066BFCF55 /* Frameworks */,
+				509E29A4F3CEFD6F7D78C1F4 /* Pods */,
+				FCEECBF13269105567CBF196 /* Products */,
+				CAB1ABD2BE5D27F6322F2CC6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CAB1ABD2BE5D27F6322F2CC6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				306F4BD1188C5A838AF029B4 /* Pods-Kerclack */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CACCD50B4ABDD5C630E7D0F6 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				79443EA7355CFAABA9D9AAF6 /* AFURLRequestSerialization.h */,
+				E84CA74476ED0137E74C3F3C /* AFURLRequestSerialization.m */,
+				D8C7098E12456CF26936EFCC /* AFURLResponseSerialization.h */,
+				0CD2F00EE77A9B1E2409508D /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		CEE1E4FEF2949B2066BFCF55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9F030A741B683CCA208A442 /* AFNetworking.framework */,
+				E6E4D3F29893BB572EB5AC15 /* Alamofire.framework */,
+				9D98572E93289E3348F76380 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D028DF4C255C873AE1D4F37C /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				6A96C27A2F2CAABEF020FFEE /* AFSecurityPolicy.h */,
+				C1E4E9B7B51B33B481C32246 /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		D89007A65BF4574F066AC0EB /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				7F487495B9B93E40AFF9C997 /* AFHTTPSessionManager.h */,
+				40903999818AE067C577E936 /* AFHTTPSessionManager.m */,
+				3B7CE2D25F1E2BB8A4A63124 /* AFURLSessionManager.h */,
+				0F8C89B14ED6CDD731E2DF8F /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		ECE465D9AE54AC42669E3247 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				ACBF02C2D0CC47B144FCE6B9 /* Alamofire.swift */,
+				6DA29D534E8EA025CF28054C /* Download.swift */,
+				71A52B7764CB9F12062FF4C7 /* Manager.swift */,
+				6520A0FB792148FC0903A4AD /* ParameterEncoding.swift */,
+				D9312504CB4A2A1DBC3AE6E1 /* Request.swift */,
+				2C57C811017243E6D180B549 /* ResponseSerialization.swift */,
+				207D0A75E1DE73E55BA8164F /* Upload.swift */,
+				C59F6547629DCCDC8D56C05B /* Validation.swift */,
+				1062CFF849DF695C10EE0BD4 /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		ED84E715A58CD6E70C7DE0EC /* AFAmazonS3Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4610C8E2D75CF049941A6E32 /* AFAmazonS3Manager.h */,
+				D43157BBC8D320C4AE87BE9A /* AFAmazonS3Manager.m */,
+				527945F9EAA813A60F598837 /* AFAmazonS3RequestSerializer.h */,
+				0FCD68C0DF9270F20230307A /* AFAmazonS3RequestSerializer.m */,
+				8CA449B78CBB6E2EECD358E6 /* AFAmazonS3ResponseSerializer.h */,
+				EA17306027C80A626E0B8945 /* AFAmazonS3ResponseSerializer.m */,
+				045E007820C666ADDAB473AA /* Support Files */,
+			);
+			path = AFAmazonS3Manager;
+			sourceTree = "<group>";
+		};
+		FCEECBF13269105567CBF196 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0447FAED40936CF103CCACEE /* AFAmazonS3Manager.framework */,
+				051530687B5C69C9DA6A92A2 /* AFNetworking.framework */,
+				9E2720018E043875FE25EDA4 /* Alamofire.framework */,
+				F12E9E959782D5F81A361240 /* AmazonS3RequestManager.framework */,
+				DC9A0FAEA51B58ADEF0ED559 /* Pods_Kerclack.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3D58829E31BC99A7A5BD1A43 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F96C7EB64DAECAC0191E423E /* Pods-Kerclack-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F4DD23843ED94888CF7B60F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D5CDC273A62094B5E847E14 /* Pods-Kerclack-Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7455E95DB58578B23B11E21F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				461E04D3E6C5817F7F9E0850 /* AFAmazonS3Manager.h in Headers */,
+				26341782A901D6B28367CEC6 /* AFAmazonS3RequestSerializer.h in Headers */,
+				E2A8D68CE3AE2D7FEC37A82D /* AFAmazonS3ResponseSerializer.h in Headers */,
+				CA0C95F18230BA4ECB63D575 /* Pods-Kerclack-AFAmazonS3Manager-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD9AFD71C2BB6FE7BE0FF0F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D496439CB1FE1F96003016 /* AmazonS3RequestManager.h in Headers */,
+				EE674F3C25AE311AB50100FC /* AmazonS3SignatureHelpers.h in Headers */,
+				D646B7960C55568002622A86 /* Pods-Kerclack-AmazonS3RequestManager-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7667EC035322C3AA6D7070C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				564AA0F1981D51F9E6C472E0 /* AFHTTPRequestOperation.h in Headers */,
+				C6AF7EC02E2058DF6B5A36E8 /* AFHTTPRequestOperationManager.h in Headers */,
+				60A4C5093C1BAE78B0A12213 /* AFHTTPSessionManager.h in Headers */,
+				AC461AB51567BE894B7F3A94 /* AFNetworkActivityIndicatorManager.h in Headers */,
+				BB28984441F108D2817B7796 /* AFNetworkReachabilityManager.h in Headers */,
+				F1652A25BA210C1AE2189798 /* AFNetworking.h in Headers */,
+				D3A23CEDC78FFDD597532884 /* AFSecurityPolicy.h in Headers */,
+				A77078941949A76EB5571F92 /* AFURLConnectionOperation.h in Headers */,
+				0877EA421FAF7FF9F2634A77 /* AFURLRequestSerialization.h in Headers */,
+				07B2CF94A61F8BD8348DAA68 /* AFURLResponseSerialization.h in Headers */,
+				29F7465C4AF424284BFEAB8A /* AFURLSessionManager.h in Headers */,
+				0312FE099ADC485D0F9ACE34 /* Pods-Kerclack-AFNetworking-umbrella.h in Headers */,
+				A14B7BE496D52F6600C83B3C /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				A8F5330D063840145809F1F7 /* UIAlertView+AFNetworking.h in Headers */,
+				E4F41952FF309DE61B040220 /* UIButton+AFNetworking.h in Headers */,
+				8EEAAE54459B076336065AA9 /* UIImageView+AFNetworking.h in Headers */,
+				EE3DC9C9521E99B45D1CF548 /* UIKit+AFNetworking.h in Headers */,
+				DF08259287E7B5D3725DBF6F /* UIProgressView+AFNetworking.h in Headers */,
+				DDA5808E8E72516EDD04378C /* UIRefreshControl+AFNetworking.h in Headers */,
+				38120B62DA55B36A5C56BC8A /* UIWebView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0D9F90DDD0D03B333B0D3803 /* Pods-Kerclack-Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A21643859363F7E2F5A71A2 /* Build configuration list for PBXNativeTarget "Pods-Kerclack-Alamofire" */;
+			buildPhases = (
+				633432A354EC1060CDE47162 /* Sources */,
+				8144F0348CDDBFEB4787E9A4 /* Frameworks */,
+				4F4DD23843ED94888CF7B60F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Kerclack-Alamofire";
+			productName = "Pods-Kerclack-Alamofire";
+			productReference = 9E2720018E043875FE25EDA4 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2F119F404D56817165CB6CF6 /* Pods-Kerclack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04E64E0E60EDB08F384133AD /* Build configuration list for PBXNativeTarget "Pods-Kerclack" */;
+			buildPhases = (
+				907929ABA6C9F659B692840B /* Sources */,
+				1084D3FE3AA0E2A7B98365E1 /* Frameworks */,
+				3D58829E31BC99A7A5BD1A43 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3769ED663E2AC3FDF3C69944 /* PBXTargetDependency */,
+				F5A5D1C736789E161DE615CB /* PBXTargetDependency */,
+				1EAAA131FEDFC5201441D3A8 /* PBXTargetDependency */,
+				885ACF3F3A0720A2183BD1BE /* PBXTargetDependency */,
+			);
+			name = "Pods-Kerclack";
+			productName = "Pods-Kerclack";
+			productReference = DC9A0FAEA51B58ADEF0ED559 /* Pods_Kerclack.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		61D8481913A1BBEF3C34F5E3 /* Pods-Kerclack-AmazonS3RequestManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDCD7AF766FCC762FE80AD8A /* Build configuration list for PBXNativeTarget "Pods-Kerclack-AmazonS3RequestManager" */;
+			buildPhases = (
+				43F93F7888F7BA7EEFFD5143 /* Sources */,
+				657C8A791B993A29AF4E4EAA /* Frameworks */,
+				AD9AFD71C2BB6FE7BE0FF0F0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69781DFE5848A2B943C0B20F /* PBXTargetDependency */,
+			);
+			name = "Pods-Kerclack-AmazonS3RequestManager";
+			productName = "Pods-Kerclack-AmazonS3RequestManager";
+			productReference = F12E9E959782D5F81A361240 /* AmazonS3RequestManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		881947E15119232C7414454D /* Pods-Kerclack-AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3EC6BDAE64EF46EA9F7BE4D /* Build configuration list for PBXNativeTarget "Pods-Kerclack-AFNetworking" */;
+			buildPhases = (
+				3B8F792866A05AE6312B0420 /* Sources */,
+				3D0B34758B985DBE29B04FA7 /* Frameworks */,
+				F7667EC035322C3AA6D7070C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Kerclack-AFNetworking";
+			productName = "Pods-Kerclack-AFNetworking";
+			productReference = 051530687B5C69C9DA6A92A2 /* AFNetworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		994013DEE18D337F74057A9B /* Pods-Kerclack-AFAmazonS3Manager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06DE8692C516006CCD3AF70E /* Build configuration list for PBXNativeTarget "Pods-Kerclack-AFAmazonS3Manager" */;
+			buildPhases = (
+				DD9E1FD564F1BD04B27C1EE0 /* Sources */,
+				7D35AEBFE02DAC28DBD5D50A /* Frameworks */,
+				7455E95DB58578B23B11E21F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F43A1107264E2409408146B3 /* PBXTargetDependency */,
+			);
+			name = "Pods-Kerclack-AFAmazonS3Manager";
+			productName = "Pods-Kerclack-AFAmazonS3Manager";
+			productReference = 0447FAED40936CF103CCACEE /* AFAmazonS3Manager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A1683C5574BC00544F5E97C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 4B0DF01CBFD7E9294C90DA83 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C96D7EB45B3D805604510D9B;
+			productRefGroup = FCEECBF13269105567CBF196 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F119F404D56817165CB6CF6 /* Pods-Kerclack */,
+				994013DEE18D337F74057A9B /* Pods-Kerclack-AFAmazonS3Manager */,
+				881947E15119232C7414454D /* Pods-Kerclack-AFNetworking */,
+				0D9F90DDD0D03B333B0D3803 /* Pods-Kerclack-Alamofire */,
+				61D8481913A1BBEF3C34F5E3 /* Pods-Kerclack-AmazonS3RequestManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B8F792866A05AE6312B0420 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B311504C5D3FCEF31BC0118 /* AFHTTPRequestOperation.m in Sources */,
+				97FE5DBDA553BB0B23985463 /* AFHTTPRequestOperationManager.m in Sources */,
+				6F531E8FAD30F433F22295C2 /* AFHTTPSessionManager.m in Sources */,
+				79198E8E3E6C876C6E40E951 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				709E1F0214ED74375A855655 /* AFNetworkReachabilityManager.m in Sources */,
+				33D47B963B97CA9E51014811 /* AFSecurityPolicy.m in Sources */,
+				E474F09F2EF9327DB74BB528 /* AFURLConnectionOperation.m in Sources */,
+				2DF2D71FA46FF27F36515538 /* AFURLRequestSerialization.m in Sources */,
+				B1CB52A9833470132453DB4D /* AFURLResponseSerialization.m in Sources */,
+				41CC30098E62595A6A55CA7A /* AFURLSessionManager.m in Sources */,
+				4CD45010B399E33E7A9F918F /* Pods-Kerclack-AFNetworking-dummy.m in Sources */,
+				5A2437CB1F388BA2B544E158 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				A45EDA3B5AA9DE3E68EDD60B /* UIAlertView+AFNetworking.m in Sources */,
+				B7663E7286501EEA49851888 /* UIButton+AFNetworking.m in Sources */,
+				D49F47BDDF244664C14E1115 /* UIImageView+AFNetworking.m in Sources */,
+				36EF88A973E9B66D207F1FD6 /* UIProgressView+AFNetworking.m in Sources */,
+				C4807278D6E39C0F14625EB1 /* UIRefreshControl+AFNetworking.m in Sources */,
+				7696145299561897D4AAE027 /* UIWebView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43F93F7888F7BA7EEFFD5143 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C11B3B7F95E5222ACF1B480E /* AmazonS3ACL.swift in Sources */,
+				184FF956224C101022F1B1B4 /* AmazonS3RequestManager.swift in Sources */,
+				04C0ACBCA8820622DB8B1B16 /* AmazonS3SignatureHelpers.m in Sources */,
+				32EC6A733227150C75EFBC2A /* Pods-Kerclack-AmazonS3RequestManager-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633432A354EC1060CDE47162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DA79B944E6AB5FD6440C685 /* Alamofire.swift in Sources */,
+				7D65CD3FD390AF7BA30F9446 /* Download.swift in Sources */,
+				B9B79AC6A0B1065389EE43B3 /* Manager.swift in Sources */,
+				83960890C97BF50ACA518005 /* ParameterEncoding.swift in Sources */,
+				5D7EF6CE29BDF4C72D8693D0 /* Pods-Kerclack-Alamofire-dummy.m in Sources */,
+				37F481C182BCAF670D0F01CA /* Request.swift in Sources */,
+				3DDDE6DE326359CBD7F82A8B /* ResponseSerialization.swift in Sources */,
+				6CBBC3476ADB4B3FAE5A6813 /* Upload.swift in Sources */,
+				2ED1643C13044DFC23AE5007 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		907929ABA6C9F659B692840B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF808EB9377F9EFA11C5FB88 /* Pods-Kerclack-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9E1FD564F1BD04B27C1EE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFF760B613337D126768129 /* AFAmazonS3Manager.m in Sources */,
+				7627F3B0EF77F122D5F2DDD7 /* AFAmazonS3RequestSerializer.m in Sources */,
+				F3F84D12DE68EEB852509ABE /* AFAmazonS3ResponseSerializer.m in Sources */,
+				ACB7B22C7DB24245AE5DC497 /* Pods-Kerclack-AFAmazonS3Manager-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1EAAA131FEDFC5201441D3A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Kerclack-Alamofire";
+			target = 0D9F90DDD0D03B333B0D3803 /* Pods-Kerclack-Alamofire */;
+			targetProxy = 568A56E7F7F29ED4FC0A2931 /* PBXContainerItemProxy */;
+		};
+		3769ED663E2AC3FDF3C69944 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Kerclack-AFAmazonS3Manager";
+			target = 994013DEE18D337F74057A9B /* Pods-Kerclack-AFAmazonS3Manager */;
+			targetProxy = B0C749319643E1B2B710857D /* PBXContainerItemProxy */;
+		};
+		69781DFE5848A2B943C0B20F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Kerclack-Alamofire";
+			target = 0D9F90DDD0D03B333B0D3803 /* Pods-Kerclack-Alamofire */;
+			targetProxy = D5553B58F19822CDD655737F /* PBXContainerItemProxy */;
+		};
+		885ACF3F3A0720A2183BD1BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Kerclack-AmazonS3RequestManager";
+			target = 61D8481913A1BBEF3C34F5E3 /* Pods-Kerclack-AmazonS3RequestManager */;
+			targetProxy = C65F48A560AC7FE3774758B4 /* PBXContainerItemProxy */;
+		};
+		F43A1107264E2409408146B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Kerclack-AFNetworking";
+			target = 881947E15119232C7414454D /* Pods-Kerclack-AFNetworking */;
+			targetProxy = D9B48D807062A425B8704677 /* PBXContainerItemProxy */;
+		};
+		F5A5D1C736789E161DE615CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Kerclack-AFNetworking";
+			target = 881947E15119232C7414454D /* Pods-Kerclack-AFNetworking */;
+			targetProxy = A081CF4EE2B27329E323DB67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0815EBA5BB0D66A29D5B948B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FB3B6379463B68B57FA434B /* Pods-Kerclack-AFAmazonS3Manager-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Kerclack-AFAmazonS3Manager/Pods-Kerclack-AFAmazonS3Manager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Kerclack-AFAmazonS3Manager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Kerclack-AFAmazonS3Manager/Pods-Kerclack-AFAmazonS3Manager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AFAmazonS3Manager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		222269D9A822E33CEF129C2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E043124C4EB6FA462D9B9A57 /* Pods-Kerclack.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Kerclack/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Kerclack/Pods-Kerclack.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Kerclack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		25092C465C88DE1C2EF035BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FB3B6379463B68B57FA434B /* Pods-Kerclack-AFAmazonS3Manager-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Kerclack-AFAmazonS3Manager/Pods-Kerclack-AFAmazonS3Manager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Kerclack-AFAmazonS3Manager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Kerclack-AFAmazonS3Manager/Pods-Kerclack-AFAmazonS3Manager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AFAmazonS3Manager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		283FAC3039E7FCC031102FA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 127CCA79C1FF42D273ECCAB3 /* Pods-Kerclack-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Kerclack-Alamofire/Pods-Kerclack-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Kerclack-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Kerclack-Alamofire/Pods-Kerclack-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		449857AE6E82B800BF20C0DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4D37C779278A4CA54F7EBD01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AC8F95BDB9A30E1723F6B63 /* Pods-Kerclack-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Kerclack-AFNetworking/Pods-Kerclack-AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Kerclack-AFNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Kerclack-AFNetworking/Pods-Kerclack-AFNetworking.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6D0289CA87102394D4358211 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AC8F95BDB9A30E1723F6B63 /* Pods-Kerclack-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Kerclack-AFNetworking/Pods-Kerclack-AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Kerclack-AFNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Kerclack-AFNetworking/Pods-Kerclack-AFNetworking.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9043F9838E6A93CCE9F3AB6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5AF2ADBE73C108DEEE8C57B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A7011D8750B614477F61862 /* Pods-Kerclack-AmazonS3RequestManager-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Kerclack-AmazonS3RequestManager/Pods-Kerclack-AmazonS3RequestManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Kerclack-AmazonS3RequestManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Kerclack-AmazonS3RequestManager/Pods-Kerclack-AmazonS3RequestManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AmazonS3RequestManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AFB8161508EB535B55F59C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A7011D8750B614477F61862 /* Pods-Kerclack-AmazonS3RequestManager-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Kerclack-AmazonS3RequestManager/Pods-Kerclack-AmazonS3RequestManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Kerclack-AmazonS3RequestManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Kerclack-AmazonS3RequestManager/Pods-Kerclack-AmazonS3RequestManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AmazonS3RequestManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DD42B709E9C6A9FDDB10ADED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 127CCA79C1FF42D273ECCAB3 /* Pods-Kerclack-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Kerclack-Alamofire/Pods-Kerclack-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Kerclack-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Kerclack-Alamofire/Pods-Kerclack-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DDA6C95478DC236B13805CCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A9ABE3FB77AF88F95A23EBB /* Pods-Kerclack.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Kerclack/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Kerclack/Pods-Kerclack.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Kerclack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04E64E0E60EDB08F384133AD /* Build configuration list for PBXNativeTarget "Pods-Kerclack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				222269D9A822E33CEF129C2B /* Debug */,
+				DDA6C95478DC236B13805CCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06DE8692C516006CCD3AF70E /* Build configuration list for PBXNativeTarget "Pods-Kerclack-AFAmazonS3Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0815EBA5BB0D66A29D5B948B /* Debug */,
+				25092C465C88DE1C2EF035BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A21643859363F7E2F5A71A2 /* Build configuration list for PBXNativeTarget "Pods-Kerclack-Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				283FAC3039E7FCC031102FA4 /* Debug */,
+				DD42B709E9C6A9FDDB10ADED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B0DF01CBFD7E9294C90DA83 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				449857AE6E82B800BF20C0DF /* Debug */,
+				9043F9838E6A93CCE9F3AB6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3EC6BDAE64EF46EA9F7BE4D /* Build configuration list for PBXNativeTarget "Pods-Kerclack-AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D0289CA87102394D4358211 /* Debug */,
+				4D37C779278A4CA54F7EBD01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDCD7AF766FCC762FE80AD8A /* Build configuration list for PBXNativeTarget "Pods-Kerclack-AmazonS3RequestManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5AF2ADBE73C108DEEE8C57B /* Debug */,
+				AFB8161508EB535B55F59C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A1683C5574BC00544F5E97C /* Project object */;
+}

@@ -36,8 +36,6 @@ class RailsRequest: NSObject {
     
     var username: String!
     var email: String!
-    var firstName: String!
-    var lastName: String!
     var password: String!
     
     func logOut() {
@@ -58,8 +56,6 @@ class RailsRequest: NSObject {
                 
                 "user_name" : username,
                 "password" : password,
-                "first_name" : firstName,
-                "last_name" : lastName,
                 "email" : email,
                 
             ],
@@ -162,67 +158,6 @@ class RailsRequest: NSObject {
             isCorrect = responseInfo?["won"] as? Bool
             
             completion()
-            
-        })
-        
-    }
-    
-    func getPlayablePosts(completion: (posts: [AnyObject]) -> Void) {
-        
-        
-        var info = [
-            
-            "method" : "GET",
-            "endpoint" : "/posts/all/playable",
-            
-            "query" : [
-                
-                "page" : 1
-                
-            ]
-            
-            ] as [String: AnyObject]
-        
-        requestWithInfo(info, andCompletion: { (responseInfo) -> Void in
-            
-            
-            println(responseInfo)
-            
-            if let posts = responseInfo as? [AnyObject] {
-                
-                completion(posts: posts)
-                
-            } else {
-                
-                completion(posts: [])
-                
-            }
-            
-            
-        })
-        
-    }
-    
-    
-    
-    func scoreboard(username: String, score: String, completion: () -> Void) {
-        
-        var info = [
-            
-            "method" : "POST",
-            "endpoint" : "/topscores",
-            "parameters" : [
-                
-                "user_name":username,
-                "score":score
-                
-            ]
-            
-            ] as [String: AnyObject]
-        
-        requestWithInfo(info, andCompletion: { (responseInfo) -> Void in
-            
-            println(responseInfo)
             
         })
         

@@ -26,6 +26,11 @@
 		9185C5761B3EC9A300540784 /* Comic Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9185C5721B3EC9A300540784 /* Comic Book.otf */; };
 		9185C5781B3ECF3A00540784 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185C5771B3ECF3A00540784 /* MainMenuViewController.swift */; };
 		9185C57A1B3ED3C400540784 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185C5791B3ED3C400540784 /* Keys.swift */; };
+		9185C5801B3EEA1D00540784 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9185C57F1B3EEA1D00540784 /* Podfile */; };
+		9185C5821B3EF41900540784 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185C5811B3EF41900540784 /* ItemCell.swift */; };
+		9185C5841B3EF50800540784 /* ItemCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185C5831B3EF50800540784 /* ItemCollectionView.swift */; };
+		9185C5861B3EF61400540784 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185C5851B3EF61400540784 /* Buttons.swift */; };
+		D108A4897B5FA381B1044A02 /* Pods_Kerclack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9750CB26C26B71DCC21E01EF /* Pods_Kerclack.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7369DF4FBC0DEFA0ED9D08D1 /* Pods-Kerclack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kerclack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kerclack/Pods-Kerclack.release.xcconfig"; sourceTree = "<group>"; };
 		9185C5371B3E278100540784 /* Kerclack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kerclack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9185C53B1B3E278100540784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9185C53C1B3E278100540784 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +68,12 @@
 		9185C5721B3EC9A300540784 /* Comic Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic Book.otf"; sourceTree = "<group>"; };
 		9185C5771B3ECF3A00540784 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		9185C5791B3ED3C400540784 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		9185C57F1B3EEA1D00540784 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		9185C5811B3EF41900540784 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		9185C5831B3EF50800540784 /* ItemCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionView.swift; sourceTree = "<group>"; };
+		9185C5851B3EF61400540784 /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		9750CB26C26B71DCC21E01EF /* Pods_Kerclack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kerclack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C37E2F595F22534E376CD993 /* Pods-Kerclack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kerclack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kerclack/Pods-Kerclack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D108A4897B5FA381B1044A02 /* Pods_Kerclack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29E1063F01DA5F83D51E0B13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9750CB26C26B71DCC21E01EF /* Pods_Kerclack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9185C52E1B3E278100540784 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +110,8 @@
 				9185C56C1B3EC8A200540784 /* Custom Elements */,
 				9185C54F1B3E278100540784 /* KerclackTests */,
 				9185C5381B3E278100540784 /* Products */,
+				BB231DCBBDB042206BC029BB /* Pods */,
+				29E1063F01DA5F83D51E0B13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,12 +138,15 @@
 		9185C53A1B3E278100540784 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9185C5871B3F133100540784 /* Sounds */,
 				9185C53C1B3E278100540784 /* AppDelegate.swift */,
 				9185C5431B3E278100540784 /* Images.xcassets */,
 				9185C5451B3E278100540784 /* LaunchScreen.xib */,
 				9185C53B1B3E278100540784 /* Info.plist */,
 				9185C56A1B3EC72D00540784 /* RailsRequest.swift */,
 				9185C5791B3ED3C400540784 /* Keys.swift */,
+				9185C57F1B3EEA1D00540784 /* Podfile */,
+				9185C5851B3EF61400540784 /* Buttons.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -159,6 +185,8 @@
 				9185C5641B3EC68400540784 /* CameraViewController.swift */,
 				9185C5661B3EC69A00540784 /* ComicViewController.swift */,
 				9185C5681B3EC6A800540784 /* FinishViewController.swift */,
+				9185C5811B3EF41900540784 /* ItemCell.swift */,
+				9185C5831B3EF50800540784 /* ItemCollectionView.swift */,
 			);
 			name = CameraFlow;
 			sourceTree = "<group>";
@@ -176,6 +204,22 @@
 			path = Kerclack;
 			sourceTree = "<group>";
 		};
+		9185C5871B3F133100540784 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		BB231DCBBDB042206BC029BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C37E2F595F22534E376CD993 /* Pods-Kerclack.debug.xcconfig */,
+				7369DF4FBC0DEFA0ED9D08D1 /* Pods-Kerclack.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -183,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9185C5561B3E278100540784 /* Build configuration list for PBXNativeTarget "Kerclack" */;
 			buildPhases = (
+				A6D6A59D6991930788A85BCC /* Check Pods Manifest.lock */,
 				9185C5331B3E278100540784 /* Sources */,
 				9185C5341B3E278100540784 /* Frameworks */,
 				9185C5351B3E278100540784 /* Resources */,
+				4DC6E55F701568A331EED4AD /* Embed Pods Frameworks */,
+				EB7F896881A5816E15662994 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,6 +309,7 @@
 				9185C5761B3EC9A300540784 /* Comic Book.otf in Resources */,
 				9185C5441B3E278100540784 /* Images.xcassets in Resources */,
 				9185C5751B3EC9A300540784 /* Comic Book Italic.otf in Resources */,
+				9185C5801B3EEA1D00540784 /* Podfile in Resources */,
 				9185C5731B3EC9A300540784 /* Comic Book Bold Italic.otf in Resources */,
 				9185C5741B3EC9A300540784 /* Comic Book Bold.otf in Resources */,
 			);
@@ -276,14 +324,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4DC6E55F701568A331EED4AD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kerclack/Pods-Kerclack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6D6A59D6991930788A85BCC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EB7F896881A5816E15662994 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kerclack/Pods-Kerclack-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9185C5331B3E278100540784 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9185C5781B3ECF3A00540784 /* MainMenuViewController.swift in Sources */,
+				9185C5841B3EF50800540784 /* ItemCollectionView.swift in Sources */,
 				9185C5611B3EC65200540784 /* LoginViewController.swift in Sources */,
+				9185C5861B3EF61400540784 /* Buttons.swift in Sources */,
 				9185C56B1B3EC72D00540784 /* RailsRequest.swift in Sources */,
+				9185C5821B3EF41900540784 /* ItemCell.swift in Sources */,
 				9185C5651B3EC68400540784 /* CameraViewController.swift in Sources */,
 				9185C5671B3EC69A00540784 /* ComicViewController.swift in Sources */,
 				9185C5691B3EC6A800540784 /* FinishViewController.swift in Sources */,
@@ -415,6 +514,7 @@
 		};
 		9185C5571B3E278100540784 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C37E2F595F22534E376CD993 /* Pods-Kerclack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Kerclack/Info.plist;
@@ -425,6 +525,7 @@
 		};
 		9185C5581B3E278100540784 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7369DF4FBC0DEFA0ED9D08D1 /* Pods-Kerclack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Kerclack/Info.plist;

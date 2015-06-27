@@ -15,6 +15,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordField: UITextField!
 
     @IBOutlet weak var errorLabel: UILabel!
+    
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
 
     @IBAction func finishedButtonPressed(sender: AnyObject) {
         
@@ -56,7 +58,24 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         //        self.emailField.delegate = self
         
+        NSNotificationCenter.defaultCenter().addObserverForName(UIKeyboardWillChangeFrameNotification, object: nil, queue: NSOperationQueue.mainQueue()) { (notification) -> Void in
+            
+            self.view.setNeedsUpdateConstraints()
+            self.view.setNeedsLayout()
+            
+            if let kbSize = notification.userInfo?[UIKeyboardFrameEndUserInfoKey]?.CGRectValue().size{
+                
+                self.bottomConstraint.constant = 20 + kbSize.height
+                
+            }
+            
+        }
         
+        NSNotificationCenter.defaultCenter().addObserverForName(UIKeyboardDidHideNotification, object: nil, queue: NSOperationQueue.mainQueue()) { (notification) -> Void in
+            
+            self.bottomConstraint.constant = 20
+            
+        }
         
         // Do any additional setup after loading the view.
     }

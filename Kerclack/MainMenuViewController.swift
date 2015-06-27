@@ -10,6 +10,14 @@ import UIKit
 
 class MainMenuViewController: UIViewController {
 
+    @IBAction func makePanelsButton(sender: AnyObject) {
+    
+        let cameraVC = storyboard?.instantiateViewControllerWithIdentifier("cameraVC") as! CameraViewController
+        
+        self.navigationController?.pushViewController(cameraVC, animated: true)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
