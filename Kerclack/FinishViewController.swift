@@ -24,7 +24,7 @@ class FinishViewController: UIViewController {
         
         let mainMenuVC = storyboard?.instantiateViewControllerWithIdentifier("mainMenuVC") as! MainMenuViewController
         
-        self.navigationController?.popToViewController(mainMenuVC, animated: true)
+        presentViewController(mainMenuVC, animated: true, completion: nil)
         
     }
     
@@ -34,8 +34,6 @@ class FinishViewController: UIViewController {
         super.viewDidLoad()
 
         errorLabel.text = ""
-        
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
         
         // Do any additional setup after loading the view.
     }

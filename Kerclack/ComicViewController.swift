@@ -45,8 +45,6 @@ class ComicViewController: UIViewController, UICollectionViewDataSource, UIColle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-        
         generateImages()
         
         myImageView.contentMode = UIViewContentMode.ScaleAspectFit
@@ -54,7 +52,6 @@ class ComicViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         myImageView.image = myImage
         
-        // Pinch Gesture.  Might need to move from viewDidLoad.
         var pinchGesture = UIPinchGestureRecognizer(target: self, action: "resizeMask:")
         view.addGestureRecognizer(pinchGesture)
         
@@ -63,9 +60,7 @@ class ComicViewController: UIViewController, UICollectionViewDataSource, UIColle
         itemCollectionOutlet.dataSource = self
         itemCollectionOutlet.delegate = self 
 
-        
     }
-    
     
     func resizeMask(gr: UIPinchGestureRecognizer) {
         
@@ -74,11 +69,8 @@ class ComicViewController: UIViewController, UICollectionViewDataSource, UIColle
             let width = currentMask.frame.width
             let height = currentMask.frame.height
             
-            //            let scale = 1.0 - ((1.0 - gr.scale) / 2)
-            
             currentMask.frame.size.height = height + gr.velocity
             currentMask.frame.size.width = width + gr.velocity
-            
             
         }
 
@@ -206,9 +198,7 @@ class ComicViewController: UIViewController, UICollectionViewDataSource, UIColle
 
         submitVC.submitImage = newImage
         
-        self.navigationController?.pushViewController(submitVC, animated: true)
-        
-//        presentViewController(submitVC, animated: true, completion: nil)
+        presentViewController(submitVC, animated: true, completion: nil)
         
         
     }
@@ -247,20 +237,8 @@ class ComicViewController: UIViewController, UICollectionViewDataSource, UIColle
         
        let mainMenuVC = storyboard?.instantiateViewControllerWithIdentifier("mainMenuVC") as! MainMenuViewController
   
-        navigationController?.popToRootViewControllerAnimated(true)
-        
-//        navigationController?.popToViewController(mainMenuVC, animated: true)
-        
+        presentViewController(mainMenuVC, animated: true, completion: nil)
         
     }
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
     
 }

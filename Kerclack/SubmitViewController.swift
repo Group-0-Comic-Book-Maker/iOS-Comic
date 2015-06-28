@@ -70,8 +70,7 @@ class SubmitViewController: UIViewController, UITextFieldDelegate {
         
         let finishVC = storyboard?.instantiateViewControllerWithIdentifier("finishVC") as! FinishViewController
         
-        self.navigationController?.pushViewController(finishVC, animated: true)
-    
+        presentViewController(finishVC, animated: true, completion: nil)
     
     }
     

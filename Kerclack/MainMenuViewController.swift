@@ -14,9 +14,22 @@ class MainMenuViewController: UIViewController {
     
         let cameraVC = storyboard?.instantiateViewControllerWithIdentifier("cameraVC") as! CameraViewController
         
-        self.navigationController?.pushViewController(cameraVC, animated: true)
+        presentViewController(cameraVC, animated: true, completion: nil)
         
     }
+    
+    @IBAction func logoutButton(sender: AnyObject) {
+    
+        RailsRequest.session().username = ""
+        RailsRequest.session().password = ""
+        RailsRequest.session().email = ""
+        
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    
+    }
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
