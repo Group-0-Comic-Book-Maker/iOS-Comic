@@ -31,9 +31,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 
                 println("Login storyboard transition should perform now.")
                 
-                let mainMenu = self.storyboard?.instantiateViewControllerWithIdentifier("mainMenu") as! MainMenuViewController
+                let mainMenuVC = self.storyboard?.instantiateViewControllerWithIdentifier("mainMenuVC") as! MainMenuViewController
                 
-                self.navigationController?.pushViewController(mainMenu, animated: true)
+                self.navigationController?.pushViewController(mainMenuVC, animated: true)
                 
             })
             

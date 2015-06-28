@@ -163,21 +163,6 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYn-ia-LOb">
-                                <rect key="frame" x="16" y="525" width="568" height="55"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="OnA-0c-H8m"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HACKED" family="HACKED" pointSize="45"/>
-                                <state key="normal" title="REGISTER">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="registerButtonPressed:" destination="XnK-Dx-k7R" eventType="touchUpInside" id="deG-R2-Lcj"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR ADVENTURE STARTS HERE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6I-Zb-62M">
                                 <rect key="frame" x="16" y="158" width="568" height="36"/>
                                 <constraints>
@@ -199,17 +184,17 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jtw-5k-otx">
                                 <rect key="frame" x="16" y="478" width="568" height="30"/>
                                 <fontDescription key="fontDescription" name="ComicBook-Bold" family="Comic Book" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="USERNAME" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZE9-mV-GF3">
                                 <rect key="frame" x="16" y="431" width="568" height="30"/>
                                 <fontDescription key="fontDescription" name="ComicBook-Bold" family="Comic Book" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="EMAIL" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gq7-Vw-ECX">
                                 <rect key="frame" x="16" y="384" width="568" height="30"/>
                                 <fontDescription key="fontDescription" name="ComicBook-Bold" family="Comic Book" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERROR LABEL" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxX-Qc-8r9">
                                 <rect key="frame" x="16" y="202" width="568" height="65"/>
@@ -220,6 +205,21 @@
                                 <color key="textColor" red="0.98824000359999997" green="0.062749996779999997" blue="0.30979999899999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYn-ia-LOb">
+                                <rect key="frame" x="16" y="525" width="568" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="OnA-0c-H8m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HACKED" family="HACKED" pointSize="45"/>
+                                <state key="normal" title="REGISTER">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerButtonPressed:" destination="XnK-Dx-k7R" eventType="touchUpInside" id="deG-R2-Lcj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -315,12 +315,12 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6fP-xF-Vlf">
                                 <rect key="frame" x="16" y="478" width="568" height="30"/>
                                 <fontDescription key="fontDescription" name="ComicBook-Bold" family="Comic Book" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="USERNAME" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ucm-bm-deR">
                                 <rect key="frame" x="16" y="431" width="568" height="30"/>
                                 <fontDescription key="fontDescription" name="ComicBook-Bold" family="Comic Book" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -921,7 +921,7 @@
                                             <action selector="soundsPressed:" destination="j8m-AT-fat" eventType="touchUpInside" id="X4Q-2W-jno"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RK-8t-shA">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RK-8t-shA">
                                         <rect key="frame" x="474" y="52" width="50" height="40"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -960,6 +960,7 @@
                                     <constraint firstItem="VHV-PW-niK" firstAttribute="top" secondItem="X9Q-YK-Hyf" secondAttribute="top" constant="8" id="AEZ-7d-NW0"/>
                                     <constraint firstAttribute="trailing" secondItem="pe0-ta-YAz" secondAttribute="trailing" id="BXM-q7-pq4"/>
                                     <constraint firstItem="M5t-Gt-46H" firstAttribute="top" secondItem="p8D-gK-YOf" secondAttribute="bottom" constant="4" id="Ejt-YZ-ynV"/>
+                                    <constraint firstItem="M5t-Gt-46H" firstAttribute="leading" secondItem="2RK-8t-shA" secondAttribute="trailing" constant="13" id="HmE-ZJ-XyW"/>
                                     <constraint firstItem="wc4-cT-F2y" firstAttribute="leading" secondItem="X9Q-YK-Hyf" secondAttribute="leading" constant="8" id="J0R-er-m1h"/>
                                     <constraint firstItem="WqZ-eg-8Xu" firstAttribute="leading" secondItem="wc4-cT-F2y" secondAttribute="trailing" constant="8" id="LgI-rb-FEv"/>
                                     <constraint firstAttribute="bottom" secondItem="pe0-ta-YAz" secondAttribute="bottom" id="PlJ-Vc-Pgf"/>
@@ -968,6 +969,7 @@
                                     <constraint firstAttribute="trailing" secondItem="p8D-gK-YOf" secondAttribute="trailing" constant="8" id="Wdr-Kg-o31"/>
                                     <constraint firstItem="pe0-ta-YAz" firstAttribute="top" secondItem="M5t-Gt-46H" secondAttribute="bottom" constant="8" id="ahq-rl-RRX"/>
                                     <constraint firstItem="pe0-ta-YAz" firstAttribute="top" secondItem="M5t-Gt-46H" secondAttribute="bottom" constant="8" id="gTl-i0-rHU"/>
+                                    <constraint firstItem="2RK-8t-shA" firstAttribute="top" secondItem="VHV-PW-niK" secondAttribute="bottom" constant="4" id="k2z-qd-WLk"/>
                                     <constraint firstItem="wc4-cT-F2y" firstAttribute="top" secondItem="X9Q-YK-Hyf" secondAttribute="top" constant="8" id="riR-gd-hLK"/>
                                     <constraint firstItem="WqZ-eg-8Xu" firstAttribute="top" secondItem="X9Q-YK-Hyf" secondAttribute="top" constant="8" id="spI-je-9Fp"/>
                                 </constraints>

@@ -73,9 +73,9 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
             })
             
             
-            let mainMenu = storyboard?.instantiateViewControllerWithIdentifier("mainMenu") as! MainMenuViewController
+            let mainMenuVC = storyboard?.instantiateViewControllerWithIdentifier("mainMenuVC") as! MainMenuViewController
             
-            self.navigationController?.pushViewController(mainMenu, animated: true)
+            self.navigationController?.pushViewController(mainMenuVC, animated: true)
             
         } else {
             

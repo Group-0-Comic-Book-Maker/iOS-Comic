@@ -11,7 +11,7 @@ import UIKit
 private let defaults = NSUserDefaults.standardUserDefaults()
 private let _singleton = RailsRequest()
 
-let API_URL = "https:// ~~ API URL goes here ~~ .com"
+let API_URL = "https://evening-escarpment-7913.herokuapp.com"
 
 class RailsRequest: NSObject {
     
@@ -54,9 +54,9 @@ class RailsRequest: NSObject {
             "endpoint" : "/users/register",
             "parameters" : [
                 
-                "user_name" : username,
-                "password" : password,
+                "username" : username,
                 "email" : email,
+                "password" : password,
                 
             ],
             
@@ -87,7 +87,7 @@ class RailsRequest: NSObject {
             "endpoint" : "/users/login",
             "parameters" : [
                 
-                "user_name" : username,
+                "username" : username,
                 "password" : password,
                 
             ],
@@ -98,15 +98,16 @@ class RailsRequest: NSObject {
             
             println(responseInfo)
             
-            
-            if let accessToken = responseInfo?["access_token"] as? String {
+            if let basicInfo = responseInfo?["user"] as? [String:AnyObject] {
+                
+                let accessToken = basicInfo["access_token"] as? String
                 
                 self.token = accessToken
                 
                 completion()
                 
             }
-            
+        
         })
         
     }
@@ -116,11 +117,10 @@ class RailsRequest: NSObject {
         var info = [
             
             "method" : "POST",
-            "endpoint" : "/posts/new",
+            "endpoint" : "/photos/create",
             "parameters" : [
                 
                 "image_url":imageURL,
-                "answer":answer
                 
             ]
             
@@ -129,35 +129,6 @@ class RailsRequest: NSObject {
         requestWithInfo(info, andCompletion: { (responseInfo) -> Void in
             
             println(responseInfo)
-            
-        })
-        
-    }
-    
-    func guessImage(postId: String, guess: String, completion: () -> Void) {
-        
-        var isCorrect: Bool?
-        
-        var info = [
-            
-            "method" : "POST",
-            "endpoint" : "/guesses",
-            "query" : [
-                
-                "post_id":postId,
-                "guess":guess
-                
-            ]
-            
-            ] as [String: AnyObject]
-        
-        requestWithInfo(info, andCompletion: { (responseInfo) -> Void in
-            
-            println(responseInfo)
-            
-            isCorrect = responseInfo?["won"] as? Bool
-            
-            completion()
             
         })
         
@@ -196,7 +167,7 @@ class RailsRequest: NSObject {
             
             if let token = token {
                 
-                request.setValue(token, forHTTPHeaderField: "Access-Token")
+                request.setValue(token, forHTTPHeaderField: "Access_Token") // Alternatively: "Access-Token"
                 
             }
             
