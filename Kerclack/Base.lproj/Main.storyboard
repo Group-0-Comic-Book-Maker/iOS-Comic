@@ -940,11 +940,11 @@
                                         </state>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="HAn-Ua-lKy"/>
-                                                <exclude reference="Bgi-XE-vcT"/>
-                                                <exclude reference="bsG-OZ-oju"/>
-                                                <exclude reference="JEZ-K5-KGG"/>
                                                 <exclude reference="1C0-jR-gGg"/>
+                                                <exclude reference="Bgi-XE-vcT"/>
+                                                <exclude reference="HAn-Ua-lKy"/>
+                                                <exclude reference="JEZ-K5-KGG"/>
+                                                <exclude reference="bsG-OZ-oju"/>
                                             </mask>
                                         </variation>
                                         <connections>

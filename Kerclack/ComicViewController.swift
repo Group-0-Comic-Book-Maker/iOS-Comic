@@ -34,10 +34,14 @@ class ComicViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     func generateImages() {
         
-        for item in 0..<19 {
+        for item in 0..<26 {
             
-            imageAssetsArray.append(UIImage(named: "\(item)")!)
-
+            if var newItemImage = UIImage(named: "\(item)") {
+                
+                imageAssetsArray.append(newItemImage)
+                
+            }
+    
         }
         
     }
@@ -172,8 +176,6 @@ class ComicViewController: UIViewController, UICollectionViewDataSource, UIColle
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         // This should return the count of the category of assets.
-
-//        return 12
         
             return imageAssetsArray.count
         
