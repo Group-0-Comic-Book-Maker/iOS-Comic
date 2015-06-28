@@ -17,7 +17,7 @@
 		9185C5631B3EC66A00540784 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185C5621B3EC66A00540784 /* SignupViewController.swift */; };
 		9185C5651B3EC68400540784 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185C5641B3EC68400540784 /* CameraViewController.swift */; };
 		9185C5671B3EC69A00540784 /* ComicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185C5661B3EC69A00540784 /* ComicViewController.swift */; };
-		9185C5691B3EC6A800540784 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185C5681B3EC6A800540784 /* FinishViewController.swift */; };
+		9185C5691B3EC6A800540784 /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185C5681B3EC6A800540784 /* SubmitViewController.swift */; };
 		9185C56B1B3EC72D00540784 /* RailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185C56A1B3EC72D00540784 /* RailsRequest.swift */; };
 		9185C56E1B3EC8BB00540784 /* HACKED.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9185C56D1B3EC8BB00540784 /* HACKED.ttf */; };
 		9185C5731B3EC9A300540784 /* Comic Book Bold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9185C56F1B3EC9A300540784 /* Comic Book Bold Italic.otf */; };
@@ -30,6 +30,8 @@
 		9185C5821B3EF41900540784 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185C5811B3EF41900540784 /* ItemCell.swift */; };
 		9185C5841B3EF50800540784 /* ItemCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185C5831B3EF50800540784 /* ItemCollectionView.swift */; };
 		9185C5861B3EF61400540784 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185C5851B3EF61400540784 /* Buttons.swift */; };
+		9185C5891B3F5D5200540784 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9185C5881B3F5D5200540784 /* FinishViewController.swift */; };
+		9185C58B1B3F8A3100540784 /* Razing.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9185C58A1B3F8A3100540784 /* Razing.ttf */; };
 		D108A4897B5FA381B1044A02 /* Pods_Kerclack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9750CB26C26B71DCC21E01EF /* Pods_Kerclack.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -59,7 +61,7 @@
 		9185C5621B3EC66A00540784 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		9185C5641B3EC68400540784 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		9185C5661B3EC69A00540784 /* ComicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicViewController.swift; sourceTree = "<group>"; };
-		9185C5681B3EC6A800540784 /* FinishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
+		9185C5681B3EC6A800540784 /* SubmitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
 		9185C56A1B3EC72D00540784 /* RailsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RailsRequest.swift; sourceTree = "<group>"; };
 		9185C56D1B3EC8BB00540784 /* HACKED.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HACKED.ttf; sourceTree = "<group>"; };
 		9185C56F1B3EC9A300540784 /* Comic Book Bold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic Book Bold Italic.otf"; sourceTree = "<group>"; };
@@ -72,6 +74,8 @@
 		9185C5811B3EF41900540784 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		9185C5831B3EF50800540784 /* ItemCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionView.swift; sourceTree = "<group>"; };
 		9185C5851B3EF61400540784 /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		9185C5881B3F5D5200540784 /* FinishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
+		9185C58A1B3F8A3100540784 /* Razing.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Razing.ttf; sourceTree = "<group>"; };
 		9750CB26C26B71DCC21E01EF /* Pods_Kerclack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kerclack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37E2F595F22534E376CD993 /* Pods-Kerclack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kerclack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kerclack/Pods-Kerclack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -184,7 +188,8 @@
 			children = (
 				9185C5641B3EC68400540784 /* CameraViewController.swift */,
 				9185C5661B3EC69A00540784 /* ComicViewController.swift */,
-				9185C5681B3EC6A800540784 /* FinishViewController.swift */,
+				9185C5681B3EC6A800540784 /* SubmitViewController.swift */,
+				9185C5881B3F5D5200540784 /* FinishViewController.swift */,
 				9185C5811B3EF41900540784 /* ItemCell.swift */,
 				9185C5831B3EF50800540784 /* ItemCollectionView.swift */,
 			);
@@ -194,6 +199,7 @@
 		9185C56C1B3EC8A200540784 /* Custom Elements */ = {
 			isa = PBXGroup;
 			children = (
+				9185C58A1B3F8A3100540784 /* Razing.ttf */,
 				9185C56D1B3EC8BB00540784 /* HACKED.ttf */,
 				9185C56F1B3EC9A300540784 /* Comic Book Bold Italic.otf */,
 				9185C5701B3EC9A300540784 /* Comic Book Bold.otf */,
@@ -310,6 +316,7 @@
 				9185C5441B3E278100540784 /* Images.xcassets in Resources */,
 				9185C5751B3EC9A300540784 /* Comic Book Italic.otf in Resources */,
 				9185C5801B3EEA1D00540784 /* Podfile in Resources */,
+				9185C58B1B3F8A3100540784 /* Razing.ttf in Resources */,
 				9185C5731B3EC9A300540784 /* Comic Book Bold Italic.otf in Resources */,
 				9185C5741B3EC9A300540784 /* Comic Book Bold.otf in Resources */,
 			);
@@ -377,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9185C5891B3F5D5200540784 /* FinishViewController.swift in Sources */,
 				9185C5781B3ECF3A00540784 /* MainMenuViewController.swift in Sources */,
 				9185C5841B3EF50800540784 /* ItemCollectionView.swift in Sources */,
 				9185C5611B3EC65200540784 /* LoginViewController.swift in Sources */,
@@ -385,7 +393,7 @@
 				9185C5821B3EF41900540784 /* ItemCell.swift in Sources */,
 				9185C5651B3EC68400540784 /* CameraViewController.swift in Sources */,
 				9185C5671B3EC69A00540784 /* ComicViewController.swift in Sources */,
-				9185C5691B3EC6A800540784 /* FinishViewController.swift in Sources */,
+				9185C5691B3EC6A800540784 /* SubmitViewController.swift in Sources */,
 				9185C55F1B3EC64400540784 /* WelcomeViewController.swift in Sources */,
 				9185C5631B3EC66A00540784 /* SignupViewController.swift in Sources */,
 				9185C53D1B3E278100540784 /* AppDelegate.swift in Sources */,

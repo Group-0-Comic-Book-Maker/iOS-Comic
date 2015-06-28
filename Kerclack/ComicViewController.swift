@@ -21,13 +21,9 @@ class ComicViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     var newComicItem: UIImageView?
     
-    var fxBubbles = []
-    var weapons = []
-    var masks = []
-    var otherItems = []
-    var soundEffects = []
+    var comicItems: [UIImageView] = []
     
-    var comicItems: [[String:AnyObject]] = []
+    var itemViewCollection: [UIImageView] = []
     
     var imageAssetsArray: [UIImage] = []
     
@@ -36,11 +32,9 @@ class ComicViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     @IBOutlet weak var itemCollectionOutlet: ItemCollectionView!
     
-    @IBOutlet weak var newlyChosenPhoto: UIImageView!
-    
     func generateImages() {
         
-        for item in 0..<13 {
+        for item in 0..<19 {
             
             imageAssetsArray.append(UIImage(named: "\(item)")!)
 
@@ -51,24 +45,20 @@ class ComicViewController: UIViewController, UICollectionViewDataSource, UIColle
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        
         generateImages()
-        println("\(imageAssetsArray)")
         
         myImageView.contentMode = UIViewContentMode.ScaleAspectFit
         myImageView.backgroundColor = UIColor.blackColor()
         
-        newlyChosenPhoto.image = myImage
-        
-//        println(myUsername)
-        
-//        println(RailsRequest.session().token)
+        myImageView.image = myImage
         
         // Pinch Gesture.  Might need to move from viewDidLoad.
         var pinchGesture = UIPinchGestureRecognizer(target: self, action: "resizeMask:")
         view.addGestureRecognizer(pinchGesture)
         
         bottomConstraint.constant = -200
-        
         
         itemCollectionOutlet.dataSource = self
         itemCollectionOutlet.delegate = self 
@@ -104,25 +94,12 @@ class ComicViewController: UIViewController, UICollectionViewDataSource, UIColle
         newMaskView.image = UIImage(named: "Mask")
         newMaskView.center = view.center
         
-        view.addSubview(newMaskView)
+        myImageView.addSubview(newMaskView)
+        comicItems.append(newMaskView)
         
         currentMask = newMaskView
         
     }
-    
-//    func imageResize() {
-//        
-//        var newSize = CGSize(width: 480,height: 640)
-//        let rect = CGRectMake(0,0, newSize.width, newSize.height)
-//        UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
-//        
-//        // image is a variable of type UIImage
-//        myImage?.drawInRect(rect)
-//        
-//        self.resizedImage = UIGraphicsGetImageFromCurrentImageContext()
-//        UIGraphicsEndImageContext()
-//                
-//    }
     
     var startTouchLocation: CGPoint!
     
@@ -177,11 +154,12 @@ class ComicViewController: UIViewController, UICollectionViewDataSource, UIColle
         if let selectedCell = cell.itemView {
             
             newComicItem = UIImageView(frame: CGRectMake(0, 0, 200, 200))
-            
+            newComicItem?.contentMode = .ScaleAspectFit
             newComicItem!.image = UIImage(named: "\(indexPath.row)")
             newComicItem!.center = view.center
             
-            view.addSubview(newComicItem!)
+            myImageView.addSubview(newComicItem!)
+            itemViewCollection.append(newComicItem!)
             
             currentMask = newComicItem!
             
@@ -203,9 +181,9 @@ class ComicViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         // This should return the count of the category of assets.
 
-        return 12
+//        return 12
         
-        //        return imageAssetsArray.count
+            return imageAssetsArray.count
         
     }
     
@@ -217,21 +195,43 @@ class ComicViewController: UIViewController, UICollectionViewDataSource, UIColle
     @IBAction func saveButtonPressed(sender: AnyObject) {
         
         // This pops to the next VC.
-        let finishVC = storyboard?.instantiateViewControllerWithIdentifier("finishVC") as! FinishViewController
+        
+        UIGraphicsBeginImageContext(self.myImageView.bounds.size)
+        let context = UIGraphicsGetCurrentContext()
+        myImageView.layer.renderInContext(context)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        let submitVC = storyboard?.instantiateViewControllerWithIdentifier("submitVC") as! SubmitViewController
 
-        presentViewController(finishVC, animated: true, completion: nil)
+        submitVC.submitImage = newImage
+        
+        self.navigationController?.pushViewController(submitVC, animated: true)
+        
+//        presentViewController(submitVC, animated: true, completion: nil)
         
         
     }
     
     @IBAction func undoButtonPressed(sender: AnyObject) {
         
-        if comicItems.count > 0 {
+        if itemViewCollection != [] {
             
-            comicItems.removeLast()
+            itemViewCollection.last?.removeFromSuperview()
+            itemViewCollection.removeLast()
             
         }
         
+    }
+    
+    @IBAction func clearButtonPressed(sender: AnyObject) {
+        
+        for item in itemViewCollection {
+            
+            item.removeFromSuperview()
+            
+        }
+    
     }
     
     @IBAction func colorButtonPress(sender: AnyObject) {
@@ -243,6 +243,16 @@ class ComicViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     }
     
+    @IBAction func mainMenuButtonPressed(sender: AnyObject) {
+        
+       let mainMenuVC = storyboard?.instantiateViewControllerWithIdentifier("mainMenuVC") as! MainMenuViewController
+  
+        navigationController?.popToRootViewControllerAnimated(true)
+        
+//        navigationController?.popToViewController(mainMenuVC, animated: true)
+        
+        
+    }
     /*
     // MARK: - Navigation
     

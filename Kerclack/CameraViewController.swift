@@ -17,6 +17,8 @@ class CameraViewController: UIViewController, UINavigationControllerDelegate, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        
         imagePick.sourceType = UIImagePickerControllerSourceType.Camera
         imagePick.delegate = self
         imagePick.showsCameraControls = true
@@ -39,9 +41,9 @@ class CameraViewController: UIViewController, UINavigationControllerDelegate, UI
         
         comicVC.myImage = chosenPhoto
         
-//        self.navigationController?.pushViewController(comicVC, animated: true)
+        self.navigationController?.pushViewController(comicVC, animated: true)
         
-        presentViewController(comicVC, animated: true, completion: nil)
+//        presentViewController(comicVC, animated: true, completion: nil)
         
         
     }
