@@ -35,8 +35,6 @@ class SubmitViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.setNavigationBarHidden(false, animated: false)
-        
         submitImageView.image = submitImage
         submitImageView.contentMode = UIViewContentMode.ScaleAspectFit
         
@@ -70,10 +68,15 @@ class SubmitViewController: UIViewController, UITextFieldDelegate {
         
         let finishVC = storyboard?.instantiateViewControllerWithIdentifier("finishVC") as! FinishViewController
         
-        presentViewController(finishVC, animated: true, completion: nil)
+        self.navigationController?.pushViewController(finishVC, animated: true)
     
     }
     
+    @IBAction func closeButtonPressed(sender: AnyObject) {
+    
+        self.navigationController?.popViewControllerAnimated(true)
+    
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

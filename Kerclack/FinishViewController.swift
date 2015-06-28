@@ -14,17 +14,13 @@ class FinishViewController: UIViewController {
     
     @IBAction func takeAnotherButton(sender: AnyObject) {
         
-        let cameraVC = storyboard?.instantiateViewControllerWithIdentifier("cameraVC") as! CameraViewController
-        
-        self.navigationController?.popToViewController(cameraVC, animated: true)
+        self.navigationController?.popToRootViewControllerAnimated(true)
     
     }
     
     @IBAction func mainMenuButton(sender: AnyObject) {
         
-        let mainMenuVC = storyboard?.instantiateViewControllerWithIdentifier("mainMenuVC") as! MainMenuViewController
-        
-        presentViewController(mainMenuVC, animated: true, completion: nil)
+        dismissViewControllerAnimated(true, completion: nil)
         
     }
     

@@ -12,9 +12,14 @@ class MainMenuViewController: UIViewController {
 
     @IBAction func makePanelsButton(sender: AnyObject) {
     
-        let cameraVC = storyboard?.instantiateViewControllerWithIdentifier("cameraVC") as! CameraViewController
+//        let cameraVC = storyboard?.instantiateViewControllerWithIdentifier("cameraVC") as! CameraViewController
+//        
+//        presentViewController(cameraVC, animated: true, completion: nil)
+
+        let cameraNavigation = storyboard?.instantiateViewControllerWithIdentifier("cameraNavigation") as! UINavigationController
         
-        presentViewController(cameraVC, animated: true, completion: nil)
+        presentViewController(cameraNavigation, animated: true, completion: nil)
+        
         
     }
     

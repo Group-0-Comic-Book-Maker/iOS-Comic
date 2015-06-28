@@ -34,13 +34,11 @@ class CameraViewController: UIViewController, UINavigationControllerDelegate, UI
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
         
         var chosenPhoto = info[UIImagePickerControllerOriginalImage] as! UIImage
-        
-        let comicVC = storyboard?.instantiateViewControllerWithIdentifier("comicVC") as! ComicViewController
+        var comicVC = storyboard?.instantiateViewControllerWithIdentifier("comicVC") as! ComicViewController
         
         comicVC.myImage = chosenPhoto
         
-        presentViewController(comicVC, animated: true, completion: nil)
-        
+        self.navigationController?.pushViewController(comicVC, animated: true)
         
     }
     

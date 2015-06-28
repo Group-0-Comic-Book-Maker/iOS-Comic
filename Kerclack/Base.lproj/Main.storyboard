@@ -22,8 +22,10 @@
             <string>ComicBook-Bold</string>
             <string>ComicBook-Bold</string>
             <string>ComicBook-Bold</string>
+            <string>ComicBook-Bold</string>
         </mutableArray>
         <mutableArray key="Comic Book.otf">
+            <string>ComicBook</string>
             <string>ComicBook</string>
             <string>ComicBook</string>
             <string>ComicBook</string>
@@ -254,7 +256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mNg-Ph-y31" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1981" y="702"/>
+            <point key="canvasLocation" x="1931" y="690"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="pWq-xl-n6c">
@@ -352,7 +354,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5k-3P-hZ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1981" y="-39"/>
+            <point key="canvasLocation" x="1931" y="-43"/>
         </scene>
         <!--Main Menu View Controller-->
         <scene sceneID="alM-H5-Gz9">
@@ -456,12 +458,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Y8d-kc-zNf"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUQ-2F-IWS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3337" y="337"/>
+            <point key="canvasLocation" x="1192" y="1445"/>
         </scene>
         <!--Submit View Controller-->
         <scene sceneID="3WN-wu-MnF">
@@ -476,7 +479,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3rh-AG-NBr">
-                                <rect key="frame" x="16" y="72" width="568" height="420"/>
+                                <rect key="frame" x="16" y="28" width="568" height="451"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="376" id="Ip6-gd-iNW"/>
                                 </constraints>
@@ -506,22 +509,45 @@
                                 <fontDescription key="fontDescription" name="ComicBook-Bold" family="Comic Book" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wq9-hg-ANO">
+                                <rect key="frame" x="524" y="419" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="4ae-Yj-jbl"/>
+                                    <constraint firstAttribute="height" constant="60" id="W55-fu-JW7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ComicBook-Bold" family="Comic Book" pointSize="40"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="0.98824000359999997" green="0.062749996779999997" blue="0.30979999899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButtonPressed:" destination="vdL-7P-w5Q" eventType="touchUpInside" id="LHp-Zj-ufN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="pzs-eC-lqa" firstAttribute="top" secondItem="JQG-ue-dBB" secondAttribute="bottom" constant="9" id="09L-SC-s8Z"/>
                             <constraint firstItem="Nlb-wz-7W0" firstAttribute="top" secondItem="3rh-AG-NBr" secondAttribute="bottom" constant="11" id="Efy-oS-Fey"/>
                             <constraint firstItem="Nlb-wz-7W0" firstAttribute="leading" secondItem="Pxn-hS-8Y6" secondAttribute="leading" constant="16" id="Fz8-Ru-xfs"/>
+                            <constraint firstItem="Nlb-wz-7W0" firstAttribute="top" secondItem="Wq9-hg-ANO" secondAttribute="bottom" constant="24" id="Mbs-QW-83n"/>
                             <constraint firstItem="JQG-ue-dBB" firstAttribute="top" secondItem="Nlb-wz-7W0" secondAttribute="bottom" constant="8" id="N9Y-LN-kbz"/>
+                            <constraint firstAttribute="trailing" secondItem="Wq9-hg-ANO" secondAttribute="trailing" constant="16" id="QjQ-DW-JFJ"/>
                             <constraint firstItem="3rh-AG-NBr" firstAttribute="leading" secondItem="Pxn-hS-8Y6" secondAttribute="leading" constant="16" id="SME-Kj-K3U"/>
                             <constraint firstAttribute="trailing" secondItem="Nlb-wz-7W0" secondAttribute="trailing" constant="16" id="ak7-xY-N4D"/>
                             <constraint firstItem="JQG-ue-dBB" firstAttribute="leading" secondItem="Pxn-hS-8Y6" secondAttribute="leading" constant="16" id="djm-Na-Tsr"/>
                             <constraint firstItem="3rh-AG-NBr" firstAttribute="top" secondItem="MjB-2b-5vV" secondAttribute="bottom" constant="8" id="jfM-Bh-u7l"/>
+                            <constraint firstItem="Nlb-wz-7W0" firstAttribute="top" secondItem="3rh-AG-NBr" secondAttribute="bottom" constant="24" id="k0R-zv-cms"/>
                             <constraint firstAttribute="trailing" secondItem="3rh-AG-NBr" secondAttribute="trailing" constant="16" id="s4m-O6-4r6"/>
                             <constraint firstAttribute="trailing" secondItem="JQG-ue-dBB" secondAttribute="trailing" constant="16" id="vI0-9i-qiC"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Efy-oS-Fey"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="bottomConstraint" destination="09L-SC-s8Z" id="enU-Iv-bUC"/>
                         <outlet property="captionTextField" destination="Nlb-wz-7W0" id="DNe-8w-7e2"/>
@@ -530,7 +556,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1eZ-Gp-eRH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3337" y="1720"/>
+            <point key="canvasLocation" x="2656" y="1445"/>
         </scene>
         <!--Finish View Controller-->
         <scene sceneID="gdp-rt-Om1">
@@ -629,19 +655,19 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PxD-Qv-X0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4050" y="1720"/>
+            <point key="canvasLocation" x="3384" y="1445"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--menuNavigation-->
         <scene sceneID="qTV-1v-pPo">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lae-NO-z9c" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="menuNavigation" title="menuNavigation" automaticallyAdjustsScrollViewInsets="NO" id="Lae-NO-z9c" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jGB-DO-lPy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -812,7 +838,7 @@
                                             <constraint firstAttribute="width" constant="50" id="vhR-18-t3m"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="16"/>
-                                        <state key="normal" title="Clear">
+                                        <state key="normal" title="Back">
                                             <color key="titleColor" red="0.98824000359999997" green="0.062749996779999997" blue="0.30979999899999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -826,7 +852,7 @@
                                             </mask>
                                         </variation>
                                         <connections>
-                                            <action selector="clearButtonPressed:" destination="j8m-AT-fat" eventType="touchUpInside" id="D97-WW-u0c"/>
+                                            <action selector="backButtonPressed:" destination="j8m-AT-fat" eventType="touchUpInside" id="EIO-VK-2gv"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wc4-cT-F2y">
@@ -895,6 +921,36 @@
                                             <action selector="soundsPressed:" destination="j8m-AT-fat" eventType="touchUpInside" id="X4Q-2W-jno"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RK-8t-shA">
+                                        <rect key="frame" x="474" y="52" width="50" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="1C0-jR-gGg"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Bgi-XE-vcT"/>
+                                            <constraint firstAttribute="height" constant="40" id="HAn-Ua-lKy"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="JEZ-K5-KGG"/>
+                                            <constraint firstAttribute="height" constant="40" id="OEA-nB-TAs"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="60" id="bsG-OZ-oju"/>
+                                            <constraint firstAttribute="width" constant="50" id="hHL-YV-tkY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="16"/>
+                                        <state key="normal" title="Clear">
+                                            <color key="titleColor" red="0.98824000359999997" green="0.062749996779999997" blue="0.30979999899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="HAn-Ua-lKy"/>
+                                                <exclude reference="Bgi-XE-vcT"/>
+                                                <exclude reference="bsG-OZ-oju"/>
+                                                <exclude reference="JEZ-K5-KGG"/>
+                                                <exclude reference="1C0-jR-gGg"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="clearButtonPressed:" destination="j8m-AT-fat" eventType="touchUpInside" id="C5Q-Ew-rdx"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -956,7 +1012,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zpp-0A-erI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3337" y="1045"/>
+            <point key="canvasLocation" x="1931" y="1445"/>
+        </scene>
+        <!--cameraNavigation-->
+        <scene sceneID="3ET-Qx-7bt">
+            <objects>
+                <navigationController storyboardIdentifier="cameraNavigation" title="cameraNavigation" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="TQY-CS-Boz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zCm-PS-gIg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pJ5-WM-0tI" kind="relationship" relationship="rootViewController" id="Ql3-h5-HZ1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rta-u2-2za" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="434" y="1445"/>
         </scene>
     </scenes>
 </document>

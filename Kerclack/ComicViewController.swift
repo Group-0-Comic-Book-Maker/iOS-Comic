@@ -198,7 +198,7 @@ class ComicViewController: UIViewController, UICollectionViewDataSource, UIColle
 
         submitVC.submitImage = newImage
         
-        presentViewController(submitVC, animated: true, completion: nil)
+        self.navigationController?.pushViewController(submitVC, animated: true)
         
         
     }
@@ -233,11 +233,16 @@ class ComicViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     }
     
+    @IBAction func backButtonPressed(sender: AnyObject) {
+        
+        self.navigationController?.popViewControllerAnimated(true)
+        
+    }
+    
+    
     @IBAction func mainMenuButtonPressed(sender: AnyObject) {
         
-       let mainMenuVC = storyboard?.instantiateViewControllerWithIdentifier("mainMenuVC") as! MainMenuViewController
-  
-        presentViewController(mainMenuVC, animated: true, completion: nil)
+       dismissViewControllerAnimated(true, completion: nil)
         
     }
     
